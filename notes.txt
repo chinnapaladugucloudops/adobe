@@ -39,3 +39,18 @@ resource "docker_container" "mycontainer" {
 $ terraform taint <resource-type.resourcename>
 $ terraform taint docker_image.myimg
 $ terraform taint docker_container.mycontainer
+
+export AWS_ACCESS_KEY_ID=(your access key id)
+export AWS_SECRET_ACCESS_KEY=(your secret access key)
+==============awsexample=====
+# Specify the AWS details 
+provider "aws" {
+  region = "ap-south-1"
+}
+
+# Specify the EC2 details
+resource "aws_instance" "example" {
+  ami           = "ami-0b99c7725b9484f9e"
+  instance_type = "t2.micro"
+}
+
