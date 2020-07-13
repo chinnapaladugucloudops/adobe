@@ -35,3 +35,7 @@ resource "docker_container" "mycontainer" {
   }
 }
 
+==========
+$ terraform taint <resource-type.resourcename>
+$ terraform taint docker_image.myimg
+$ terraform taint docker_container.mycontainer
