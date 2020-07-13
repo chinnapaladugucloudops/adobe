@@ -106,3 +106,53 @@ $ terraform plan -var 'VARIABLENAME=VALUE'
   terraform plan -var 'container_name=testme'
   terraform plan -var 'container_name=testme' -var 'image_name=nginx:stable'
 
+
+$ vi test.tfvars
+	container_name = "testme"
+$ terraform plan -var-file="test.tfvars"
+$ terraform apply -var-file="test.tfvars"
+====================list variable: var.NAME[Index]
+variable "image_name" {
+    type    = "list"
+    default = ["nginx:latest", "httpd:latest"]
+}
+
+variable "container_name" {
+  description = "Name of the container."
+  default     = "testme"
+}
+
+resource "docker_image" "myimage" {
+  name = "${var.image_name[0]}"
+}
+
+resource "docker_container" "container_id" {
+  name  = "${var.container_name}"
+  image = "${docker_image.myimage.latest}"
+}
+================Map varibale: var.NAME[Key]
+variable "image_name" {
+    type = "map"
+    default = {
+        "test"  = "nginx:latest"
+        "prod" = "httpd:latest"
+    }
+}
+
+variable "container_name" {
+  description = "Name of the container."
+  default     = "testme"
+}
+
+# Download the latest Image
+resource "docker_image" "myimage" {
+  name = "${var.image_name["test"]}"
+}
+
+# Start the Container
+resource "docker_container" "container_id" {
+  name  = "${var.container_name}"
+  image = "${docker_image.myimage.latest}"
+}
+
+
