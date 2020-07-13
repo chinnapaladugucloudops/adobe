@@ -65,4 +65,44 @@ resource "aws_s3_bucket" "example" {
   # NOTE: S3 bucket names must be unique across _all_ AWS accounts
   bucket = "wezva-adam-demo-s3"
 }
+===============================
+#Define variables
+variable "image_name" {
+  description = "Image for container."
+  default     = "nginx:latest"
+}
+
+variable "container_name" {
+  description = "Name of the container."
+  default     = "testme"
+}
+
+variable "int_port" {
+  description = "Internal port for container."
+  default     = "80"
+}
+
+variable "ext_port" {
+  description = "External port for container."
+  default     = "80"
+}
+
+# Download the latest Nginx Image
+resource "docker_image" "myimage" {
+  name = "${var.image_name}"
+}
+
+# Start the Container
+resource "docker_container" "container_id" {
+  name  = "${var.container_name}"
+  image = "${docker_image.myimage.latest}"
+  ports {
+    internal = "${var.int_port}"
+    external = "${var.ext_port}"
+  }
+}
+
+$ terraform plan -var 'VARIABLENAME=VALUE'
+  terraform plan -var 'container_name=testme'
+  terraform plan -var 'container_name=testme' -var 'image_name=nginx:stable'
 
