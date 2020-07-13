@@ -25,4 +25,13 @@ resource "docker_image" "myimg" {
   name = "centos:latest"
 }
 
+# Start the Container
+resource "docker_container" "mycontainer" {
+  name  = "testng"
+  image = "${docker_image.myimg.latest}"
+  ports {
+    internal = "80"
+    external = "80"
+  }
+}
 
