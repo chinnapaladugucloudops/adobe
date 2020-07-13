@@ -154,5 +154,9 @@ resource "docker_container" "container_id" {
   name  = "${var.container_name}"
   image = "${docker_image.myimage.latest}"
 }
-
+====================
+output "ip_address" {
+  value       = "${docker_container.container_id.ip_address}"
+  description = "The IP for the container."
+}
 
