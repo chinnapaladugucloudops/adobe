@@ -1,15 +1,12 @@
-provider "github" {
-  organization = "wezvatechnologies"
+provider "aws" {
+  region = "ap-south-1"
 }
 
-data "github_repository" "example" {
-  full_name = "scmlearningcentre/maven"
+data "aws_availability_zones" "example" {
+    state = "available"
 }
 
-data "github_repositories" "example" {
-   query = "scmlearningcentre/is:public"
+output "azlist" {
+    value = "${data.aws_availability_zones.example.names}"
 }
 
-output "repolist" {
-    value = "${data.github_repositories.example.full_names}"
-}
