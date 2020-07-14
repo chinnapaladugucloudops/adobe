@@ -160,3 +160,21 @@ output "ip_address" {
   description = "The IP for the container."
 }
 
+============= export GITHUB_TOKEN=(your github token)
+export GITHUB_TOKEN=ca97bf357787613896a326e000828362b867300b
+===============
+provider "github" {
+  organization = "wezvatechnologies"
+}
+
+data "github_repository" "example" {
+  full_name = "scmlearningcentre/maven"
+}
+
+data "github_repositories" "example" {
+   query = "scmlearningcentre/is:public"
+}
+
+output "repolist" {
+    value = "${data.github_repositories.example.full_names}"
+}
