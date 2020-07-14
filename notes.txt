@@ -217,3 +217,10 @@ $ terraform workspace show
 $ terraform workspace new test
 $ terraform workspace list
 $ terraform workspace select default
+=====
+data.aws_availability_zones.all
+aws_security_group.elb
+ - aws_elb.example
+aws_security_group.instance
+ - aws_launch_configuration
+ - aws_autoscaling_group
