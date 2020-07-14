@@ -3,9 +3,14 @@ provider "aws" {
   region = "ap-south-1"
 }
 
-#Create single user
-resource "aws_iam_user" "example" {
-  name = "adam.${count.index}"
-  count = 3
+#Create multiple users
+variable "user_names" {
+  description = "Create IAM users with these names"
+  type        = list(string)
+  default     = ["aditi", "abhaas", "hari"]
 }
 
+resource "aws_iam_user" "example" {
+  count = length(var.user_names)
+  name  = var.user_names[count.index]
+}
