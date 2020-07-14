@@ -335,3 +335,23 @@ resource "aws_iam_user" "example" {
   count = length(var.user_names)
   name  = var.user_names[count.index]
 }
+============For
+===========
+provider "aws" {
+  region = "ap-south-1"
+}
+
+variable "names" {
+  description = "A list of names"
+  type        = list(string)
+  default     = ["adam", "arnold", "stallone"]
+}
+
+output "upper_names" {
+  value = [for name in var.names : upper(name)]
+}
+
+output "short_upper_names" {
+  value = [for name in var.names : upper(name) if length(name) < 5]
+}
+
