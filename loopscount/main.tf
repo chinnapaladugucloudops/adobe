@@ -5,6 +5,7 @@ provider "aws" {
 
 #Create single user
 resource "aws_iam_user" "example" {
-  name = "adam"
+  name = "adam.${count.index}"
+  count = 3
 }
 
