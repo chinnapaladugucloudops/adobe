@@ -11,8 +11,10 @@ $ git pull
 
 $ terraform init
 $ terraform validate
-$ terraform plan
-$ terraform apply 
+$ terraform plan -out <planfilename>
+$ terraform apply <planfilename>
+$ terraform show
+$ terraform destroy 
 
 =============main.tf
 # Specify the Docker host 
@@ -22,7 +24,7 @@ provider "docker" {
 
 # Download the latest Centos image
 resource "docker_image" "myimg" {
-  name = "centos:latest"
+  name = "nginx:stable"
 }
 
 # Start the Container
@@ -34,12 +36,11 @@ resource "docker_container" "mycontainer" {
     external = "80"
   }
 }
-
 ==========
 $ terraform taint <resource-type.resourcename>
 $ terraform taint docker_image.myimg
 $ terraform taint docker_container.mycontainer
-
+=================
 export AWS_ACCESS_KEY_ID=(your access key id)
 export AWS_SECRET_ACCESS_KEY=(your secret access key)
 ==============awsexample=====
@@ -65,7 +66,7 @@ resource "aws_s3_bucket" "example" {
   # NOTE: S3 bucket names must be unique across _all_ AWS accounts
   bucket = "wezva-adam-demo-s3"
 }
-===============================
+===============variables
 #Define variables
 variable "image_name" {
   description = "Image for container."
@@ -105,7 +106,6 @@ resource "docker_container" "container_id" {
 $ terraform plan -var 'VARIABLENAME=VALUE'
   terraform plan -var 'container_name=testme'
   terraform plan -var 'container_name=testme' -var 'image_name=nginx:stable'
-
 
 $ vi test.tfvars
 	container_name = "testme"
@@ -154,7 +154,7 @@ resource "docker_container" "container_id" {
   name  = "${var.container_name}"
   image = "${docker_image.myimage.latest}"
 }
-====================
+==========output.tf
 output "ip_address" {
   value       = "${docker_container.container_id.ip_address}"
   description = "The IP for the container."
