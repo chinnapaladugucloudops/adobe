@@ -211,3 +211,9 @@ terraform{
 	 region = "ap-south-1"
   }
 }
+==========
+=======Workspace
+$ terraform workspace show
+$ terraform workspace new test
+$ terraform workspace list
+$ terraform workspace select default
