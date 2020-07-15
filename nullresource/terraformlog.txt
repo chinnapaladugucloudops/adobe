@@ -1,0 +1,2048 @@
+2020/07/15 11:34:25 [INFO] Terraform version: 0.12.28  
+2020/07/15 11:34:25 [INFO] Go runtime version: go1.12.13
+2020/07/15 11:34:25 [INFO] CLI args: []string{"/usr/local/bin/terraform", "plan"}
+2020/07/15 11:34:25 [DEBUG] Attempting to open CLI config file: /root/.terraformrc
+2020/07/15 11:34:25 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/07/15 11:34:25 [INFO] CLI command args: []string{"plan"}
+2020/07/15 11:34:25 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2020/07/15 11:34:25 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2020/07/15 11:34:25 [DEBUG] New state was assigned lineage "8fb6f1c5-675c-5656-40b2-1984c9dad884"
+2020/07/15 11:34:25 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2020/07/15 11:34:25 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2020/07/15 11:34:25 [DEBUG] checking for provider in "."
+2020/07/15 11:34:25 [DEBUG] checking for provider in "/usr/local/bin"
+2020/07/15 11:34:25 [DEBUG] checking for provider in ".terraform/plugins/linux_amd64"
+2020/07/15 11:34:25 [DEBUG] found provider "terraform-provider-null_v2.1.2_x4"
+2020/07/15 11:34:25 [DEBUG] found valid plugin: "null", "2.1.2", "/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4"
+2020/07/15 11:34:25 [DEBUG] checking for provisioner in "."
+2020/07/15 11:34:25 [DEBUG] checking for provisioner in "/usr/local/bin"
+2020/07/15 11:34:25 [DEBUG] checking for provisioner in ".terraform/plugins/linux_amd64"
+2020/07/15 11:34:25 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2020/07/15 11:34:25 [INFO] backend/local: starting Plan operation
+2020/07/15 11:34:25 [TRACE] backend/local: requesting state manager for workspace "default"
+2020/07/15 11:34:25 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2020/07/15 11:34:25 [TRACE] backend/local: requesting state lock for workspace "default"
+2020/07/15 11:34:25 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2020/07/15 11:34:25 [TRACE] statemgr.Filesystem: existing snapshot has lineage "ad0ba444-7c1f-8edb-f5ae-71f8a6c45146" serial 1
+2020/07/15 11:34:25 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2020/07/15 11:34:25 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2020/07/15 11:34:25 [TRACE] backend/local: reading remote state for workspace "default"
+2020/07/15 11:34:25 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2020/07/15 11:34:25 [TRACE] statemgr.Filesystem: read snapshot with lineage "ad0ba444-7c1f-8edb-f5ae-71f8a6c45146" serial 1
+2020/07/15 11:34:25 [TRACE] backend/local: retrieving local state snapshot for workspace "default"
+2020/07/15 11:34:25 [TRACE] backend/local: building context for current working directory
+2020/07/15 11:34:25 [TRACE] terraform.NewContext: starting
+2020/07/15 11:34:25 [TRACE] terraform.NewContext: resolving provider version selections
+2020/07/15 11:34:25 [TRACE] terraform.NewContext: loading provider schemas
+2020/07/15 11:34:25 [TRACE] LoadSchemas: retrieving schema for provider type "null"
+2020-07-15T11:34:25.915Z [INFO]  plugin: configuring client automatic mTLS
+2020-07-15T11:34:25.960Z [DEBUG] plugin: starting plugin: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 args=[/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4]
+2020-07-15T11:34:25.960Z [DEBUG] plugin: plugin started: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 pid=10401
+2020-07-15T11:34:25.960Z [DEBUG] plugin: waiting for RPC address: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4
+2020-07-15T11:34:25.967Z [INFO]  plugin.terraform-provider-null_v2.1.2_x4: configuring server automatic mTLS: timestamp=2020-07-15T11:34:25.967Z
+2020-07-15T11:34:26.012Z [DEBUG] plugin.terraform-provider-null_v2.1.2_x4: plugin address: address=/tmp/plugin292247060 network=unix timestamp=2020-07-15T11:34:26.012Z
+2020-07-15T11:34:26.012Z [DEBUG] plugin: using plugin: version=5
+2020/07/15 11:34:26 [TRACE] GRPCProvider: GetSchema
+2020-07-15T11:34:26.110Z [TRACE] plugin.stdio: waiting for stdio data
+2020/07/15 11:34:26 [TRACE] GRPCProvider: Close
+2020-07-15T11:34:26.112Z [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
+2020-07-15T11:34:26.114Z [DEBUG] plugin: plugin process exited: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 pid=10401
+2020-07-15T11:34:26.114Z [DEBUG] plugin: plugin exited
+2020/07/15 11:34:26 [TRACE] LoadSchemas: retrieving schema for provisioner "local-exec"
+2020-07-15T11:34:26.114Z [DEBUG] plugin: starting plugin: path=/usr/local/bin/terraform args=[/usr/local/bin/terraform, internal-plugin, provisioner, local-exec]
+2020-07-15T11:34:26.114Z [DEBUG] plugin: plugin started: path=/usr/local/bin/terraform pid=10408
+2020-07-15T11:34:26.114Z [DEBUG] plugin: waiting for RPC address: path=/usr/local/bin/terraform
+2020/07/15 11:34:26 [INFO] Terraform version: 0.12.28  
+2020/07/15 11:34:26 [INFO] Go runtime version: go1.12.13
+2020/07/15 11:34:26 [INFO] CLI args: []string{"/usr/local/bin/terraform", "internal-plugin", "provisioner", "local-exec"}
+2020/07/15 11:34:26 [DEBUG] Attempting to open CLI config file: /root/.terraformrc
+2020/07/15 11:34:26 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/07/15 11:34:26 [INFO] CLI command args: []string{"internal-plugin", "provisioner", "local-exec"}
+local-exec-provisioner (internal) 2020/07/15 11:34:26 [INFO] Starting provisioner plugin local-exec
+{"@level":"debug","@message":"plugin address","@timestamp":"2020-07-15T11:34:26.142931Z","address":"/tmp/plugin895519803","network":"unix"}
+2020-07-15T11:34:26.143Z [DEBUG] plugin: using plugin: version=5
+2020-07-15T11:34:26.144Z [TRACE] plugin.stdio: waiting for stdio data
+2020-07-15T11:34:26.146Z [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2020-07-15T11:34:26.148Z [DEBUG] plugin: plugin process exited: path=/usr/local/bin/terraform pid=10408
+2020-07-15T11:34:26.148Z [DEBUG] plugin: plugin exited
+2020/07/15 11:34:26 [TRACE] terraform.NewContext: complete
+2020/07/15 11:34:26 [TRACE] backend/local: finished building terraform.Context
+2020/07/15 11:34:26 [TRACE] backend/local: requesting interactive input, if necessary
+2020/07/15 11:34:26 [TRACE] Context.Input: Prompting for provider arguments
+2020/07/15 11:34:26 [TRACE] Context.Input: Provider provider.null implied by resource block at main.tf:1,1-35
+2020/07/15 11:34:26 [TRACE] Context.Input: Input for provider.null: map[string]cty.Value{}
+2020/07/15 11:34:26 [TRACE] backend/local: running validation operation
+2020/07/15 11:34:26 [INFO] terraform: building graph: GraphTypeValidate
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/07/15 11:34:26 [TRACE] ConfigTransformer: Starting for path: 
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  null_resource.cluster - *terraform.NodeValidatableResource
+  ------
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.LocalTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.OutputTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.StateTransformer
+2020/07/15 11:34:26 [TRACE] StateTransformer: creating nodes for deposed instance objects only
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2020/07/15 11:34:26 [TRACE] AttachResourceConfigTransformer: attaching to "null_resource.cluster" (*terraform.NodeValidatableResource) config from main.tf:1,1-35
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2020/07/15 11:34:26 [TRACE] MissingProviderTransformer: added implicit provisioner local-exec, first implied by null_resource.cluster
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer with new graph:
+  null_resource.cluster - *terraform.NodeValidatableResource
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2020/07/15 11:34:26 [TRACE] ProvisionerTransformer: null_resource.cluster is provisioned by local-exec ("provisioner.local-exec")
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.ProvisionerTransformer with new graph:
+  null_resource.cluster - *terraform.NodeValidatableResource
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  null_resource.cluster - *terraform.NodeValidatableResource
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2020/07/15 11:34:26 [DEBUG] adding implicit provider configuration provider.null, implied first by null_resource.cluster
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer with new graph:
+  null_resource.cluster - *terraform.NodeValidatableResource
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2020/07/15 11:34:26 [TRACE] ProviderTransformer: null_resource.cluster is provided by provider.null or inherited equivalent
+2020/07/15 11:34:26 [TRACE] ProviderTransformer: exact match for provider.null serving null_resource.cluster
+2020/07/15 11:34:26 [DEBUG] ProviderTransformer: "null_resource.cluster" (*terraform.NodeValidatableResource) needs provider.null
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2020/07/15 11:34:26 [TRACE] AttachSchemaTransformer: attaching resource schema to null_resource.cluster
+2020/07/15 11:34:26 [TRACE] AttachSchemaTransformer: attaching provisioner "local-exec" config schema to null_resource.cluster
+2020/07/15 11:34:26 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.null
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/07/15 11:34:26 [DEBUG] ReferenceTransformer: "provisioner.local-exec" references: []
+2020/07/15 11:34:26 [DEBUG] ReferenceTransformer: "provider.null" references: []
+2020/07/15 11:34:26 [DEBUG] ReferenceTransformer: "null_resource.cluster" references: []
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.CloseProvisionerTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.CloseProvisionerTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+    null_resource.cluster - *terraform.NodeValidatableResource
+  ------
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+    null_resource.cluster - *terraform.NodeValidatableResource
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.null (close) - *terraform.graphNodeCloseProvider
+    provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+  ------
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster - *terraform.NodeValidatableResource
+  null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster - *terraform.NodeValidatableResource
+  provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+    null_resource.cluster - *terraform.NodeValidatableResource
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.null (close) - *terraform.graphNodeCloseProvider
+    provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+  ------
+2020/07/15 11:34:26 [DEBUG] Starting graph walk: walkValidate
+2020/07/15 11:34:26 [TRACE] dag/walk: updating graph
+2020/07/15 11:34:26 [TRACE] dag/walk: added new vertex: "root"
+2020/07/15 11:34:26 [TRACE] dag/walk: added new vertex: "null_resource.cluster"
+2020/07/15 11:34:26 [TRACE] dag/walk: added new vertex: "provisioner.local-exec"
+2020/07/15 11:34:26 [TRACE] dag/walk: added new vertex: "provider.null"
+2020/07/15 11:34:26 [TRACE] dag/walk: added new vertex: "meta.count-boundary (EachMode fixup)"
+2020/07/15 11:34:26 [TRACE] dag/walk: added new vertex: "provider.null (close)"
+2020/07/15 11:34:26 [TRACE] dag/walk: added new vertex: "provisioner.local-exec (close)"
+2020/07/15 11:34:26 [TRACE] dag/walk: added edge: "root" waiting on "provider.null (close)"
+2020/07/15 11:34:26 [TRACE] dag/walk: added edge: "root" waiting on "provisioner.local-exec (close)"
+2020/07/15 11:34:26 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "null_resource.cluster"
+2020/07/15 11:34:26 [TRACE] dag/walk: added edge: "provider.null (close)" waiting on "null_resource.cluster"
+2020/07/15 11:34:26 [TRACE] dag/walk: added edge: "null_resource.cluster" waiting on "provisioner.local-exec"
+2020/07/15 11:34:26 [TRACE] dag/walk: added edge: "null_resource.cluster" waiting on "provider.null"
+2020/07/15 11:34:26 [TRACE] dag/walk: added edge: "provisioner.local-exec (close)" waiting on "null_resource.cluster"
+2020/07/15 11:34:26 [TRACE] dag/walk: added edge: "root" waiting on "meta.count-boundary (EachMode fixup)"
+2020/07/15 11:34:26 [TRACE] dag/walk: dependencies changed for "provider.null (close)", sending new deps
+2020/07/15 11:34:26 [TRACE] dag/walk: dependencies changed for "null_resource.cluster", sending new deps
+2020/07/15 11:34:26 [TRACE] dag/walk: dependencies changed for "provisioner.local-exec (close)", sending new deps
+2020/07/15 11:34:26 [TRACE] dag/walk: dependencies changed for "root", sending new deps
+2020/07/15 11:34:26 [TRACE] dag/walk: dependencies changed for "meta.count-boundary (EachMode fixup)", sending new deps
+2020/07/15 11:34:26 [TRACE] dag/walk: visiting "provisioner.local-exec"
+2020/07/15 11:34:26 [TRACE] vertex "provisioner.local-exec": starting visit (*terraform.NodeProvisioner)
+2020/07/15 11:34:26 [TRACE] vertex "provisioner.local-exec": evaluating
+2020/07/15 11:34:26 [TRACE] [walkValidate] Entering eval tree: provisioner.local-exec
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalInitProvisioner
+2020-07-15T11:34:26.150Z [DEBUG] plugin: starting plugin: path=/usr/local/bin/terraform args=[/usr/local/bin/terraform, internal-plugin, provisioner, local-exec]
+2020-07-15T11:34:26.150Z [DEBUG] plugin: plugin started: path=/usr/local/bin/terraform pid=10423
+2020-07-15T11:34:26.150Z [DEBUG] plugin: waiting for RPC address: path=/usr/local/bin/terraform
+2020/07/15 11:34:26 [TRACE] dag/walk: visiting "provider.null"
+2020/07/15 11:34:26 [TRACE] vertex "provider.null": starting visit (*terraform.NodeApplyableProvider)
+2020/07/15 11:34:26 [TRACE] vertex "provider.null": evaluating
+2020/07/15 11:34:26 [TRACE] [walkValidate] Entering eval tree: provider.null
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalInitProvider
+2020-07-15T11:34:26.150Z [INFO]  plugin: configuring client automatic mTLS
+2020/07/15 11:34:26 [INFO] Terraform version: 0.12.28  
+2020/07/15 11:34:26 [INFO] Go runtime version: go1.12.13
+2020/07/15 11:34:26 [INFO] CLI args: []string{"/usr/local/bin/terraform", "internal-plugin", "provisioner", "local-exec"}
+2020/07/15 11:34:26 [DEBUG] Attempting to open CLI config file: /root/.terraformrc
+2020/07/15 11:34:26 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/07/15 11:34:26 [INFO] CLI command args: []string{"internal-plugin", "provisioner", "local-exec"}
+local-exec-provisioner (internal) 2020/07/15 11:34:26 [INFO] Starting provisioner plugin local-exec
+{"@level":"debug","@message":"plugin address","@timestamp":"2020-07-15T11:34:26.214195Z","address":"/tmp/plugin917402521","network":"unix"}
+2020-07-15T11:34:26.222Z [DEBUG] plugin: using plugin: version=5
+2020-07-15T11:34:26.230Z [DEBUG] plugin: starting plugin: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 args=[/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4]
+2020-07-15T11:34:26.230Z [DEBUG] plugin: plugin started: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 pid=10438
+2020-07-15T11:34:26.230Z [DEBUG] plugin: waiting for RPC address: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4
+2020/07/15 11:34:26 [TRACE] [walkValidate] Exiting eval tree: provisioner.local-exec
+2020/07/15 11:34:26 [TRACE] vertex "provisioner.local-exec": visit complete
+2020-07-15T11:34:26.232Z [TRACE] plugin.stdio: waiting for stdio data
+2020-07-15T11:34:26.240Z [INFO]  plugin.terraform-provider-null_v2.1.2_x4: configuring server automatic mTLS: timestamp=2020-07-15T11:34:26.240Z
+2020-07-15T11:34:26.287Z [DEBUG] plugin.terraform-provider-null_v2.1.2_x4: plugin address: address=/tmp/plugin031693976 network=unix timestamp=2020-07-15T11:34:26.287Z
+2020-07-15T11:34:26.288Z [DEBUG] plugin: using plugin: version=5
+2020/07/15 11:34:26 [TRACE] BuiltinEvalContext: Initialized "null" provider for provider.null
+2020/07/15 11:34:26 [TRACE] <root>: eval: terraform.EvalNoop
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalValidateProvider
+2020/07/15 11:34:26 [TRACE] buildProviderConfig for provider.null: no configuration at all
+2020/07/15 11:34:26 [TRACE] GRPCProvider: GetSchema
+2020-07-15T11:34:26.383Z [TRACE] plugin.stdio: waiting for stdio data
+2020/07/15 11:34:26 [TRACE] GRPCProvider: PrepareProviderConfig
+2020-07-15T11:34:26.385Z [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
+2020/07/15 11:34:26 [TRACE] <root>: eval: terraform.EvalNoop
+2020/07/15 11:34:26 [TRACE] <root>: eval: terraform.EvalNoop
+2020/07/15 11:34:26 [TRACE] [walkValidate] Exiting eval tree: provider.null
+2020/07/15 11:34:26 [TRACE] vertex "provider.null": visit complete
+2020/07/15 11:34:26 [TRACE] dag/walk: visiting "null_resource.cluster"
+2020/07/15 11:34:26 [TRACE] vertex "null_resource.cluster": starting visit (*terraform.NodeValidatableResource)
+2020/07/15 11:34:26 [TRACE] vertex "null_resource.cluster": evaluating
+2020/07/15 11:34:26 [TRACE] [walkValidate] Entering eval tree: null_resource.cluster
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalValidateResource
+2020/07/15 11:34:26 [TRACE] GRPCProvider: ValidateResourceTypeConfig
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalGetProvisioner
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalValidateProvisioner
+2020/07/15 11:34:26 [TRACE] [walkValidate] Exiting eval tree: null_resource.cluster
+2020/07/15 11:34:26 [TRACE] vertex "null_resource.cluster": visit complete
+2020/07/15 11:34:26 [TRACE] dag/walk: visiting "provider.null (close)"
+2020/07/15 11:34:26 [TRACE] vertex "provider.null (close)": starting visit (*terraform.graphNodeCloseProvider)
+2020/07/15 11:34:26 [TRACE] vertex "provider.null (close)": evaluating
+2020/07/15 11:34:26 [TRACE] [walkValidate] Entering eval tree: provider.null (close)
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalCloseProvider
+2020/07/15 11:34:26 [TRACE] GRPCProvider: Close
+2020/07/15 11:34:26 [TRACE] dag/walk: visiting "meta.count-boundary (EachMode fixup)"
+2020/07/15 11:34:26 [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
+2020/07/15 11:34:26 [TRACE] vertex "meta.count-boundary (EachMode fixup)": evaluating
+2020/07/15 11:34:26 [TRACE] [walkValidate] Entering eval tree: meta.count-boundary (EachMode fixup)
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalCountFixZeroOneBoundaryGlobal
+2020/07/15 11:34:26 [TRACE] [walkValidate] Exiting eval tree: meta.count-boundary (EachMode fixup)
+2020/07/15 11:34:26 [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
+2020/07/15 11:34:26 [TRACE] dag/walk: visiting "provisioner.local-exec (close)"
+2020/07/15 11:34:26 [TRACE] vertex "provisioner.local-exec (close)": starting visit (*terraform.graphNodeCloseProvisioner)
+2020/07/15 11:34:26 [TRACE] vertex "provisioner.local-exec (close)": evaluating
+2020/07/15 11:34:26 [TRACE] [walkValidate] Entering eval tree: provisioner.local-exec (close)
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalCloseProvisioner
+2020-07-15T11:34:26.393Z [DEBUG] plugin: plugin process exited: path=/usr/local/bin/terraform pid=10423
+2020-07-15T11:34:26.393Z [DEBUG] plugin: plugin exited
+2020/07/15 11:34:26 [TRACE] [walkValidate] Exiting eval tree: provisioner.local-exec (close)
+2020/07/15 11:34:26 [TRACE] vertex "provisioner.local-exec (close)": visit complete
+2020-07-15T11:34:26.394Z [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Canceled desc = context canceled"
+2020-07-15T11:34:26.394Z [DEBUG] plugin: plugin process exited: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 pid=10438
+2020-07-15T11:34:26.394Z [DEBUG] plugin: plugin exited
+2020/07/15 11:34:26 [TRACE] [walkValidate] Exiting eval tree: provider.null (close)
+2020/07/15 11:34:26 [TRACE] vertex "provider.null (close)": visit complete
+2020/07/15 11:34:26 [TRACE] dag/walk: visiting "root"
+2020/07/15 11:34:26 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2020/07/15 11:34:26 [TRACE] vertex "root": visit complete
+2020/07/15 11:34:26 [INFO] backend/local: plan calling Refresh
+2020/07/15 11:34:26 [INFO] terraform: building graph: GraphTypeRefresh
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/07/15 11:34:26 [TRACE] ConfigTransformer: Starting for path: 
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  null_resource.cluster - *terraform.NodeRefreshableManagedResource
+  ------
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/07/15 11:34:26 [TRACE] ConfigTransformer: Starting for path: 
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.StateTransformer
+2020/07/15 11:34:26 [TRACE] StateTransformer: creating nodes for deposed instance objects only
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2020/07/15 11:34:26 [TRACE] AttachResourceConfigTransformer: attaching to "null_resource.cluster" (*terraform.NodeRefreshableManagedResource) config from main.tf:1,1-35
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.LocalTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.OutputTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  null_resource.cluster - *terraform.NodeRefreshableManagedResource
+  ------
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2020/07/15 11:34:26 [DEBUG] adding implicit provider configuration provider.null, implied first by null_resource.cluster
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer with new graph:
+  null_resource.cluster - *terraform.NodeRefreshableManagedResource
+  provider.null - *terraform.NodeApplyableProvider
+  ------
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2020/07/15 11:34:26 [TRACE] ProviderTransformer: null_resource.cluster is provided by provider.null or inherited equivalent
+2020/07/15 11:34:26 [TRACE] ProviderTransformer: exact match for provider.null serving null_resource.cluster
+2020/07/15 11:34:26 [DEBUG] ProviderTransformer: "null_resource.cluster" (*terraform.NodeRefreshableManagedResource) needs provider.null
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  null_resource.cluster - *terraform.NodeRefreshableManagedResource
+    provider.null - *terraform.NodeApplyableProvider
+  provider.null - *terraform.NodeApplyableProvider
+  ------
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  null_resource.cluster - *terraform.NodeRefreshableManagedResource
+    provider.null - *terraform.NodeApplyableProvider
+  provider.null - *terraform.NodeApplyableProvider
+  ------
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2020/07/15 11:34:26 [TRACE] AttachSchemaTransformer: attaching resource schema to null_resource.cluster
+2020/07/15 11:34:26 [TRACE] AttachSchemaTransformer: attaching provisioner "local-exec" config schema to null_resource.cluster
+2020/07/15 11:34:26 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.null
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/07/15 11:34:26 [DEBUG] ReferenceTransformer: "null_resource.cluster" references: []
+2020/07/15 11:34:26 [DEBUG] ReferenceTransformer: "provider.null" references: []
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2020/07/15 11:34:26 [TRACE] AttachDependenciesTransformer: null_resource.cluster depends on []
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  null_resource.cluster - *terraform.NodeRefreshableManagedResource
+    provider.null - *terraform.NodeApplyableProvider
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster - *terraform.NodeRefreshableManagedResource
+    provider.null - *terraform.NodeApplyableProvider
+  ------
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.RootTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  null_resource.cluster - *terraform.NodeRefreshableManagedResource
+    provider.null - *terraform.NodeApplyableProvider
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster - *terraform.NodeRefreshableManagedResource
+  ------
+2020/07/15 11:34:26 [DEBUG] Starting graph walk: walkRefresh
+2020/07/15 11:34:26 [TRACE] dag/walk: updating graph
+2020/07/15 11:34:26 [TRACE] dag/walk: added new vertex: "null_resource.cluster"
+2020/07/15 11:34:26 [TRACE] dag/walk: added new vertex: "provider.null"
+2020/07/15 11:34:26 [TRACE] dag/walk: added new vertex: "provider.null (close)"
+2020/07/15 11:34:26 [TRACE] dag/walk: added edge: "null_resource.cluster" waiting on "provider.null"
+2020/07/15 11:34:26 [TRACE] dag/walk: added edge: "provider.null (close)" waiting on "null_resource.cluster"
+2020/07/15 11:34:26 [TRACE] dag/walk: dependencies changed for "null_resource.cluster", sending new deps
+2020/07/15 11:34:26 [TRACE] dag/walk: dependencies changed for "provider.null (close)", sending new deps
+2020/07/15 11:34:26 [TRACE] dag/walk: visiting "provider.null"
+2020/07/15 11:34:26 [TRACE] vertex "provider.null": starting visit (*terraform.NodeApplyableProvider)
+2020/07/15 11:34:26 [TRACE] vertex "provider.null": evaluating
+2020/07/15 11:34:26 [TRACE] [walkRefresh] Entering eval tree: provider.null
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalInitProvider
+2020-07-15T11:34:26.397Z [INFO]  plugin: configuring client automatic mTLS
+2020-07-15T11:34:26.441Z [DEBUG] plugin: starting plugin: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 args=[/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4]
+2020-07-15T11:34:26.441Z [DEBUG] plugin: plugin started: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 pid=10446
+2020-07-15T11:34:26.441Z [DEBUG] plugin: waiting for RPC address: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4
+2020-07-15T11:34:26.449Z [INFO]  plugin.terraform-provider-null_v2.1.2_x4: configuring server automatic mTLS: timestamp=2020-07-15T11:34:26.449Z
+2020-07-15T11:34:26.496Z [DEBUG] plugin.terraform-provider-null_v2.1.2_x4: plugin address: address=/tmp/plugin554962328 network=unix timestamp=2020-07-15T11:34:26.496Z
+2020-07-15T11:34:26.496Z [DEBUG] plugin: using plugin: version=5
+2020/07/15 11:34:26 [TRACE] BuiltinEvalContext: Initialized "null" provider for provider.null
+2020/07/15 11:34:26 [TRACE] <root>: eval: terraform.EvalNoop
+2020/07/15 11:34:26 [TRACE] <root>: eval: terraform.EvalNoop
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalConfigProvider
+2020/07/15 11:34:26 [TRACE] buildProviderConfig for provider.null: no configuration at all
+2020/07/15 11:34:26 [TRACE] GRPCProvider: GetSchema
+2020-07-15T11:34:26.589Z [TRACE] plugin.stdio: waiting for stdio data
+2020/07/15 11:34:26 [TRACE] GRPCProvider: Configure
+2020-07-15T11:34:26.590Z [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
+2020/07/15 11:34:26 [TRACE] [walkRefresh] Exiting eval tree: provider.null
+2020/07/15 11:34:26 [TRACE] vertex "provider.null": visit complete
+2020/07/15 11:34:26 [TRACE] dag/walk: visiting "null_resource.cluster"
+2020/07/15 11:34:26 [TRACE] vertex "null_resource.cluster": starting visit (*terraform.NodeRefreshableManagedResource)
+2020/07/15 11:34:26 [TRACE] vertex "null_resource.cluster": expanding dynamic subgraph
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.ResourceCountTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.ResourceCountTransformer with new graph:
+  null_resource.cluster - *terraform.NodeRefreshableManagedResourceInstance
+  ------
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.OrphanResourceCountTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.OrphanResourceCountTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/07/15 11:34:26 [WARN] no schema for provisioner "local-exec" is attached to null_resource.cluster, so provisioner block references cannot be detected
+2020/07/15 11:34:26 [WARN] no schema for provisioner "local-exec" is attached to null_resource.cluster, so provisioner block references cannot be detected
+2020/07/15 11:34:26 [DEBUG] ReferenceTransformer: "null_resource.cluster" references: []
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.RootTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] vertex "null_resource.cluster": entering dynamic subgraph
+2020/07/15 11:34:26 [TRACE] dag/walk: updating graph
+2020/07/15 11:34:26 [TRACE] dag/walk: added new vertex: "null_resource.cluster"
+2020/07/15 11:34:26 [TRACE] dag/walk: visiting "null_resource.cluster"
+2020/07/15 11:34:26 [TRACE] vertex "null_resource.cluster": starting visit (*terraform.NodeRefreshableManagedResourceInstance)
+2020/07/15 11:34:26 [TRACE] NodeRefreshableManagedResourceInstance: null_resource.cluster will be refreshed
+2020/07/15 11:34:26 [TRACE] vertex "null_resource.cluster": evaluating
+2020/07/15 11:34:26 [TRACE] [walkRefresh] Entering eval tree: null_resource.cluster
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalReadState
+2020/07/15 11:34:26 [TRACE] EvalReadState: reading state for null_resource.cluster
+2020/07/15 11:34:26 [TRACE] UpgradeResourceState: schema version of null_resource.cluster is still 0; calling provider "registry.terraform.io/-/null" for any other minor fixups
+2020/07/15 11:34:26 [TRACE] GRPCProvider: UpgradeResourceState
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalRefreshDependencies
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalRefresh
+2020/07/15 11:34:26 [TRACE] GRPCProvider: ReadResource
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalWriteState
+2020/07/15 11:34:26 [TRACE] EvalWriteState: recording 0 dependencies for null_resource.cluster
+2020/07/15 11:34:26 [TRACE] EvalWriteState: writing current state object for null_resource.cluster
+2020/07/15 11:34:26 [TRACE] [walkRefresh] Exiting eval tree: null_resource.cluster
+2020/07/15 11:34:26 [TRACE] vertex "null_resource.cluster": visit complete
+2020/07/15 11:34:26 [TRACE] vertex "null_resource.cluster": dynamic subgraph completed successfully
+2020/07/15 11:34:26 [TRACE] vertex "null_resource.cluster": visit complete
+2020/07/15 11:34:26 [TRACE] dag/walk: visiting "provider.null (close)"
+2020/07/15 11:34:26 [TRACE] vertex "provider.null (close)": starting visit (*terraform.graphNodeCloseProvider)
+2020/07/15 11:34:26 [TRACE] vertex "provider.null (close)": evaluating
+2020/07/15 11:34:26 [TRACE] [walkRefresh] Entering eval tree: provider.null (close)
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalCloseProvider
+2020/07/15 11:34:26 [TRACE] GRPCProvider: Close
+2020-07-15T11:34:26.595Z [DEBUG] plugin: plugin process exited: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 pid=10446
+2020-07-15T11:34:26.595Z [DEBUG] plugin: plugin exited
+2020/07/15 11:34:26 [TRACE] [walkRefresh] Exiting eval tree: provider.null (close)
+2020/07/15 11:34:26 [TRACE] vertex "provider.null (close)": visit complete
+2020/07/15 11:34:26 [INFO] backend/local: plan calling Plan
+2020/07/15 11:34:26 [INFO] terraform: building graph: GraphTypePlan
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/07/15 11:34:26 [TRACE] ConfigTransformer: Starting for path: 
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  null_resource.cluster - *terraform.NodePlannableResource
+  ------
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.LocalTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.OutputTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.StateTransformer
+2020/07/15 11:34:26 [TRACE] StateTransformer: creating nodes for deposed instance objects only
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2020/07/15 11:34:26 [TRACE] AttachResourceConfigTransformer: attaching to "null_resource.cluster" (*terraform.NodePlannableResource) config from main.tf:1,1-35
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2020/07/15 11:34:26 [TRACE] MissingProviderTransformer: added implicit provisioner local-exec, first implied by null_resource.cluster
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer with new graph:
+  null_resource.cluster - *terraform.NodePlannableResource
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2020/07/15 11:34:26 [TRACE] ProvisionerTransformer: null_resource.cluster is provisioned by local-exec ("provisioner.local-exec")
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.ProvisionerTransformer with new graph:
+  null_resource.cluster - *terraform.NodePlannableResource
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  null_resource.cluster - *terraform.NodePlannableResource
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2020/07/15 11:34:26 [DEBUG] adding implicit provider configuration provider.null, implied first by null_resource.cluster
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer with new graph:
+  null_resource.cluster - *terraform.NodePlannableResource
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2020/07/15 11:34:26 [TRACE] ProviderTransformer: null_resource.cluster is provided by provider.null or inherited equivalent
+2020/07/15 11:34:26 [TRACE] ProviderTransformer: exact match for provider.null serving null_resource.cluster
+2020/07/15 11:34:26 [DEBUG] ProviderTransformer: "null_resource.cluster" (*terraform.NodePlannableResource) needs provider.null
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2020/07/15 11:34:26 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2020/07/15 11:34:26 [TRACE] AttachSchemaTransformer: attaching resource schema to null_resource.cluster
+2020/07/15 11:34:26 [TRACE] AttachSchemaTransformer: attaching provisioner "local-exec" config schema to null_resource.cluster
+2020/07/15 11:34:26 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.null
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/07/15 11:34:26 [DEBUG] ReferenceTransformer: "null_resource.cluster" references: []
+2020/07/15 11:34:26 [DEBUG] ReferenceTransformer: "provisioner.local-exec" references: []
+2020/07/15 11:34:26 [DEBUG] ReferenceTransformer: "provider.null" references: []
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2020/07/15 11:34:26 [TRACE] ForcedCBDTransformer: "null_resource.cluster" (*terraform.NodePlannableResource) has no CBD descendent, so skipping
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.CloseProvisionerTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.CloseProvisionerTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+    null_resource.cluster - *terraform.NodePlannableResource
+  ------
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+    null_resource.cluster - *terraform.NodePlannableResource
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.null (close) - *terraform.graphNodeCloseProvider
+    provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+  ------
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster - *terraform.NodePlannableResource
+  null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster - *terraform.NodePlannableResource
+  provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+    null_resource.cluster - *terraform.NodePlannableResource
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.null (close) - *terraform.graphNodeCloseProvider
+    provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+  ------
+2020/07/15 11:34:26 [DEBUG] Starting graph walk: walkPlan
+2020/07/15 11:34:26 [TRACE] dag/walk: updating graph
+2020/07/15 11:34:26 [TRACE] dag/walk: added new vertex: "provisioner.local-exec"
+2020/07/15 11:34:26 [TRACE] dag/walk: added new vertex: "provider.null"
+2020/07/15 11:34:26 [TRACE] dag/walk: added new vertex: "meta.count-boundary (EachMode fixup)"
+2020/07/15 11:34:26 [TRACE] dag/walk: added new vertex: "provider.null (close)"
+2020/07/15 11:34:26 [TRACE] dag/walk: added new vertex: "provisioner.local-exec (close)"
+2020/07/15 11:34:26 [TRACE] dag/walk: added new vertex: "root"
+2020/07/15 11:34:26 [TRACE] dag/walk: added new vertex: "null_resource.cluster"
+2020/07/15 11:34:26 [TRACE] dag/walk: added edge: "root" waiting on "meta.count-boundary (EachMode fixup)"
+2020/07/15 11:34:26 [TRACE] dag/walk: added edge: "root" waiting on "provider.null (close)"
+2020/07/15 11:34:26 [TRACE] dag/walk: added edge: "root" waiting on "provisioner.local-exec (close)"
+2020/07/15 11:34:26 [TRACE] dag/walk: added edge: "null_resource.cluster" waiting on "provisioner.local-exec"
+2020/07/15 11:34:26 [TRACE] dag/walk: added edge: "provisioner.local-exec (close)" waiting on "null_resource.cluster"
+2020/07/15 11:34:26 [TRACE] dag/walk: added edge: "null_resource.cluster" waiting on "provider.null"
+2020/07/15 11:34:26 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "null_resource.cluster"
+2020/07/15 11:34:26 [TRACE] dag/walk: added edge: "provider.null (close)" waiting on "null_resource.cluster"
+2020/07/15 11:34:26 [TRACE] dag/walk: dependencies changed for "root", sending new deps
+2020/07/15 11:34:26 [TRACE] dag/walk: dependencies changed for "null_resource.cluster", sending new deps
+2020/07/15 11:34:26 [TRACE] dag/walk: dependencies changed for "provisioner.local-exec (close)", sending new deps
+2020/07/15 11:34:26 [TRACE] dag/walk: dependencies changed for "meta.count-boundary (EachMode fixup)", sending new deps
+2020/07/15 11:34:26 [TRACE] dag/walk: dependencies changed for "provider.null (close)", sending new deps
+2020/07/15 11:34:26 [TRACE] dag/walk: visiting "provisioner.local-exec"
+2020/07/15 11:34:26 [TRACE] vertex "provisioner.local-exec": starting visit (*terraform.NodeProvisioner)
+2020/07/15 11:34:26 [TRACE] vertex "provisioner.local-exec": evaluating
+2020/07/15 11:34:26 [TRACE] [walkPlan] Entering eval tree: provisioner.local-exec
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalInitProvisioner
+2020-07-15T11:34:26.596Z [DEBUG] plugin: starting plugin: path=/usr/local/bin/terraform args=[/usr/local/bin/terraform, internal-plugin, provisioner, local-exec]
+2020-07-15T11:34:26.597Z [DEBUG] plugin: plugin started: path=/usr/local/bin/terraform pid=10453
+2020-07-15T11:34:26.597Z [DEBUG] plugin: waiting for RPC address: path=/usr/local/bin/terraform
+2020/07/15 11:34:26 [TRACE] dag/walk: visiting "provider.null"
+2020/07/15 11:34:26 [TRACE] vertex "provider.null": starting visit (*terraform.NodeApplyableProvider)
+2020/07/15 11:34:26 [TRACE] vertex "provider.null": evaluating
+2020/07/15 11:34:26 [TRACE] [walkPlan] Entering eval tree: provider.null
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalInitProvider
+2020-07-15T11:34:26.597Z [INFO]  plugin: configuring client automatic mTLS
+2020/07/15 11:34:26 [INFO] Terraform version: 0.12.28  
+2020/07/15 11:34:26 [INFO] Go runtime version: go1.12.13
+2020/07/15 11:34:26 [INFO] CLI args: []string{"/usr/local/bin/terraform", "internal-plugin", "provisioner", "local-exec"}
+2020/07/15 11:34:26 [DEBUG] Attempting to open CLI config file: /root/.terraformrc
+2020/07/15 11:34:26 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/07/15 11:34:26 [INFO] CLI command args: []string{"internal-plugin", "provisioner", "local-exec"}
+local-exec-provisioner (internal) 2020/07/15 11:34:26 [INFO] Starting provisioner plugin local-exec
+{"@level":"debug","@message":"plugin address","@timestamp":"2020-07-15T11:34:26.656698Z","address":"/tmp/plugin022263016","network":"unix"}
+2020-07-15T11:34:26.667Z [DEBUG] plugin: using plugin: version=5
+2020-07-15T11:34:26.675Z [DEBUG] plugin: starting plugin: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 args=[/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4]
+2020-07-15T11:34:26.675Z [DEBUG] plugin: plugin started: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 pid=10468
+2020-07-15T11:34:26.675Z [DEBUG] plugin: waiting for RPC address: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4
+2020/07/15 11:34:26 [TRACE] [walkPlan] Exiting eval tree: provisioner.local-exec
+2020/07/15 11:34:26 [TRACE] vertex "provisioner.local-exec": visit complete
+2020-07-15T11:34:26.677Z [TRACE] plugin.stdio: waiting for stdio data
+2020-07-15T11:34:26.686Z [INFO]  plugin.terraform-provider-null_v2.1.2_x4: configuring server automatic mTLS: timestamp=2020-07-15T11:34:26.686Z
+2020-07-15T11:34:26.731Z [DEBUG] plugin.terraform-provider-null_v2.1.2_x4: plugin address: address=/tmp/plugin705181591 network=unix timestamp=2020-07-15T11:34:26.731Z
+2020-07-15T11:34:26.731Z [DEBUG] plugin: using plugin: version=5
+2020/07/15 11:34:26 [TRACE] BuiltinEvalContext: Initialized "null" provider for provider.null
+2020/07/15 11:34:26 [TRACE] <root>: eval: terraform.EvalNoop
+2020/07/15 11:34:26 [TRACE] <root>: eval: terraform.EvalNoop
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalConfigProvider
+2020/07/15 11:34:26 [TRACE] buildProviderConfig for provider.null: no configuration at all
+2020/07/15 11:34:26 [TRACE] GRPCProvider: GetSchema
+2020-07-15T11:34:26.825Z [TRACE] plugin.stdio: waiting for stdio data
+2020/07/15 11:34:26 [TRACE] GRPCProvider: Configure
+2020-07-15T11:34:26.826Z [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
+2020/07/15 11:34:26 [TRACE] [walkPlan] Exiting eval tree: provider.null
+2020/07/15 11:34:26 [TRACE] vertex "provider.null": visit complete
+2020/07/15 11:34:26 [TRACE] dag/walk: visiting "null_resource.cluster"
+2020/07/15 11:34:26 [TRACE] vertex "null_resource.cluster": starting visit (*terraform.NodePlannableResource)
+2020/07/15 11:34:26 [TRACE] vertex "null_resource.cluster": evaluating
+2020/07/15 11:34:26 [TRACE] [walkPlan] Entering eval tree: null_resource.cluster
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalWriteResourceState
+2020/07/15 11:34:26 [TRACE] [walkPlan] Exiting eval tree: null_resource.cluster
+2020/07/15 11:34:26 [TRACE] vertex "null_resource.cluster": expanding dynamic subgraph
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.ResourceCountTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.ResourceCountTransformer with new graph:
+  null_resource.cluster - *terraform.NodePlannableResourceInstance
+  ------
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.OrphanResourceCountTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.OrphanResourceCountTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/07/15 11:34:26 [DEBUG] ReferenceTransformer: "null_resource.cluster" references: []
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/07/15 11:34:26 [TRACE] Completed graph transform *terraform.RootTransformer (no changes)
+2020/07/15 11:34:26 [TRACE] vertex "null_resource.cluster": entering dynamic subgraph
+2020/07/15 11:34:26 [TRACE] dag/walk: updating graph
+2020/07/15 11:34:26 [TRACE] dag/walk: added new vertex: "null_resource.cluster"
+2020/07/15 11:34:26 [TRACE] dag/walk: visiting "null_resource.cluster"
+2020/07/15 11:34:26 [TRACE] vertex "null_resource.cluster": starting visit (*terraform.NodePlannableResourceInstance)
+2020/07/15 11:34:26 [TRACE] vertex "null_resource.cluster": evaluating
+2020/07/15 11:34:26 [TRACE] [walkPlan] Entering eval tree: null_resource.cluster
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalReadState
+2020/07/15 11:34:26 [TRACE] EvalReadState: reading state for null_resource.cluster
+2020/07/15 11:34:26 [TRACE] UpgradeResourceState: schema version of null_resource.cluster is still 0; calling provider "registry.terraform.io/-/null" for any other minor fixups
+2020/07/15 11:34:26 [TRACE] GRPCProvider: UpgradeResourceState
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalValidateSelfRef
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalDiff
+2020/07/15 11:34:26 [TRACE] Re-validating config for "null_resource.cluster"
+2020/07/15 11:34:26 [TRACE] GRPCProvider: ValidateResourceTypeConfig
+2020/07/15 11:34:26 [TRACE] GRPCProvider: PlanResourceChange
+2020-07-15T11:34:26.829Z [DEBUG] plugin.terraform-provider-null_v2.1.2_x4: 2020/07/15 11:34:26 [DEBUG] Instance Diff is nil in SimpleDiff()
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalCheckPreventDestroy
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalWriteState
+2020/07/15 11:34:26 [TRACE] EvalWriteState: writing current state object for null_resource.cluster
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalWriteDiff
+2020/07/15 11:34:26 [TRACE] EvalWriteDiff: recorded NoOp change for null_resource.cluster
+2020/07/15 11:34:26 [TRACE] [walkPlan] Exiting eval tree: null_resource.cluster
+2020/07/15 11:34:26 [TRACE] vertex "null_resource.cluster": visit complete
+2020/07/15 11:34:26 [TRACE] vertex "null_resource.cluster": dynamic subgraph completed successfully
+2020/07/15 11:34:26 [TRACE] vertex "null_resource.cluster": visit complete
+2020/07/15 11:34:26 [TRACE] dag/walk: visiting "provisioner.local-exec (close)"
+2020/07/15 11:34:26 [TRACE] vertex "provisioner.local-exec (close)": starting visit (*terraform.graphNodeCloseProvisioner)
+2020/07/15 11:34:26 [TRACE] vertex "provisioner.local-exec (close)": evaluating
+2020/07/15 11:34:26 [TRACE] [walkPlan] Entering eval tree: provisioner.local-exec (close)
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalCloseProvisioner
+2020/07/15 11:34:26 [TRACE] dag/walk: visiting "provider.null (close)"
+2020/07/15 11:34:26 [TRACE] vertex "provider.null (close)": starting visit (*terraform.graphNodeCloseProvider)
+2020/07/15 11:34:26 [TRACE] vertex "provider.null (close)": evaluating
+2020/07/15 11:34:26 [TRACE] [walkPlan] Entering eval tree: provider.null (close)
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalCloseProvider
+2020/07/15 11:34:26 [TRACE] GRPCProvider: Close
+2020/07/15 11:34:26 [TRACE] dag/walk: visiting "meta.count-boundary (EachMode fixup)"
+2020/07/15 11:34:26 [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
+2020/07/15 11:34:26 [TRACE] vertex "meta.count-boundary (EachMode fixup)": evaluating
+2020/07/15 11:34:26 [TRACE] [walkPlan] Entering eval tree: meta.count-boundary (EachMode fixup)
+2020/07/15 11:34:26 [TRACE] <root>: eval: *terraform.EvalCountFixZeroOneBoundaryGlobal
+2020/07/15 11:34:26 [TRACE] [walkPlan] Exiting eval tree: meta.count-boundary (EachMode fixup)
+2020/07/15 11:34:26 [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
+2020-07-15T11:34:26.833Z [DEBUG] plugin: plugin process exited: path=/usr/local/bin/terraform pid=10453
+2020-07-15T11:34:26.833Z [DEBUG] plugin: plugin exited
+2020/07/15 11:34:26 [TRACE] [walkPlan] Exiting eval tree: provisioner.local-exec (close)
+2020/07/15 11:34:26 [TRACE] vertex "provisioner.local-exec (close)": visit complete
+2020-07-15T11:34:26.833Z [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2020-07-15T11:34:26.834Z [DEBUG] plugin: plugin process exited: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 pid=10468
+2020-07-15T11:34:26.834Z [DEBUG] plugin: plugin exited
+2020/07/15 11:34:26 [TRACE] [walkPlan] Exiting eval tree: provider.null (close)
+2020/07/15 11:34:26 [TRACE] vertex "provider.null (close)": visit complete
+2020/07/15 11:34:26 [TRACE] dag/walk: visiting "root"
+2020/07/15 11:34:26 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2020/07/15 11:34:26 [TRACE] vertex "root": visit complete
+2020/07/15 11:34:26 [INFO] backend/local: plan operation completed
+2020/07/15 11:34:26 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2020/07/15 11:34:26 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
+2020/07/15 11:34:57 [INFO] Terraform version: 0.12.28  
+2020/07/15 11:34:57 [INFO] Go runtime version: go1.12.13
+2020/07/15 11:34:57 [INFO] CLI args: []string{"/usr/local/bin/terraform", "apply", "--auto-approve"}
+2020/07/15 11:34:57 [DEBUG] Attempting to open CLI config file: /root/.terraformrc
+2020/07/15 11:34:57 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/07/15 11:34:57 [INFO] CLI command args: []string{"apply", "--auto-approve"}
+2020/07/15 11:34:57 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2020/07/15 11:34:57 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2020/07/15 11:34:57 [DEBUG] New state was assigned lineage "1e5b672a-a542-0e4e-6b59-3a95bd165c5f"
+2020/07/15 11:34:57 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2020/07/15 11:34:57 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2020/07/15 11:34:57 [DEBUG] checking for provider in "."
+2020/07/15 11:34:57 [DEBUG] checking for provider in "/usr/local/bin"
+2020/07/15 11:34:57 [DEBUG] checking for provider in ".terraform/plugins/linux_amd64"
+2020/07/15 11:34:57 [DEBUG] found provider "terraform-provider-null_v2.1.2_x4"
+2020/07/15 11:34:57 [DEBUG] found valid plugin: "null", "2.1.2", "/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4"
+2020/07/15 11:34:57 [DEBUG] checking for provisioner in "."
+2020/07/15 11:34:57 [DEBUG] checking for provisioner in "/usr/local/bin"
+2020/07/15 11:34:57 [DEBUG] checking for provisioner in ".terraform/plugins/linux_amd64"
+2020/07/15 11:34:57 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2020/07/15 11:34:57 [INFO] backend/local: starting Apply operation
+2020/07/15 11:34:57 [TRACE] backend/local: requesting state manager for workspace "default"
+2020/07/15 11:34:57 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2020/07/15 11:34:57 [TRACE] backend/local: requesting state lock for workspace "default"
+2020/07/15 11:34:57 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2020/07/15 11:34:57 [TRACE] statemgr.Filesystem: existing snapshot has lineage "ad0ba444-7c1f-8edb-f5ae-71f8a6c45146" serial 1
+2020/07/15 11:34:57 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2020/07/15 11:34:57 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2020/07/15 11:34:57 [TRACE] backend/local: reading remote state for workspace "default"
+2020/07/15 11:34:57 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2020/07/15 11:34:57 [TRACE] statemgr.Filesystem: read snapshot with lineage "ad0ba444-7c1f-8edb-f5ae-71f8a6c45146" serial 1
+2020/07/15 11:34:57 [TRACE] backend/local: retrieving local state snapshot for workspace "default"
+2020/07/15 11:34:57 [TRACE] backend/local: building context for current working directory
+2020/07/15 11:34:57 [TRACE] terraform.NewContext: starting
+2020/07/15 11:34:57 [TRACE] terraform.NewContext: resolving provider version selections
+2020/07/15 11:34:58 [TRACE] terraform.NewContext: loading provider schemas
+2020/07/15 11:34:58 [TRACE] LoadSchemas: retrieving schema for provider type "null"
+2020-07-15T11:34:58.050Z [INFO]  plugin: configuring client automatic mTLS
+2020-07-15T11:34:58.097Z [DEBUG] plugin: starting plugin: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 args=[/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4]
+2020-07-15T11:34:58.098Z [DEBUG] plugin: plugin started: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 pid=10493
+2020-07-15T11:34:58.098Z [DEBUG] plugin: waiting for RPC address: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4
+2020-07-15T11:34:58.104Z [INFO]  plugin.terraform-provider-null_v2.1.2_x4: configuring server automatic mTLS: timestamp=2020-07-15T11:34:58.104Z
+2020-07-15T11:34:58.152Z [DEBUG] plugin.terraform-provider-null_v2.1.2_x4: plugin address: address=/tmp/plugin971114454 network=unix timestamp=2020-07-15T11:34:58.152Z
+2020-07-15T11:34:58.152Z [DEBUG] plugin: using plugin: version=5
+2020/07/15 11:34:58 [TRACE] GRPCProvider: GetSchema
+2020-07-15T11:34:58.249Z [TRACE] plugin.stdio: waiting for stdio data
+2020/07/15 11:34:58 [TRACE] GRPCProvider: Close
+2020-07-15T11:34:58.250Z [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
+2020-07-15T11:34:58.253Z [DEBUG] plugin: plugin process exited: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 pid=10493
+2020-07-15T11:34:58.253Z [DEBUG] plugin: plugin exited
+2020/07/15 11:34:58 [TRACE] LoadSchemas: retrieving schema for provisioner "local-exec"
+2020-07-15T11:34:58.253Z [DEBUG] plugin: starting plugin: path=/usr/local/bin/terraform args=[/usr/local/bin/terraform, internal-plugin, provisioner, local-exec]
+2020-07-15T11:34:58.253Z [DEBUG] plugin: plugin started: path=/usr/local/bin/terraform pid=10500
+2020-07-15T11:34:58.253Z [DEBUG] plugin: waiting for RPC address: path=/usr/local/bin/terraform
+2020/07/15 11:34:58 [INFO] Terraform version: 0.12.28  
+2020/07/15 11:34:58 [INFO] Go runtime version: go1.12.13
+2020/07/15 11:34:58 [INFO] CLI args: []string{"/usr/local/bin/terraform", "internal-plugin", "provisioner", "local-exec"}
+2020/07/15 11:34:58 [DEBUG] Attempting to open CLI config file: /root/.terraformrc
+2020/07/15 11:34:58 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/07/15 11:34:58 [INFO] CLI command args: []string{"internal-plugin", "provisioner", "local-exec"}
+local-exec-provisioner (internal) 2020/07/15 11:34:58 [INFO] Starting provisioner plugin local-exec
+{"@level":"debug","@message":"plugin address","@timestamp":"2020-07-15T11:34:58.282726Z","address":"/tmp/plugin921327844","network":"unix"}
+2020-07-15T11:34:58.282Z [DEBUG] plugin: using plugin: version=5
+2020-07-15T11:34:58.284Z [TRACE] plugin.stdio: waiting for stdio data
+2020-07-15T11:34:58.286Z [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2020-07-15T11:34:58.288Z [DEBUG] plugin: plugin process exited: path=/usr/local/bin/terraform pid=10500
+2020-07-15T11:34:58.288Z [DEBUG] plugin: plugin exited
+2020/07/15 11:34:58 [TRACE] terraform.NewContext: complete
+2020/07/15 11:34:58 [TRACE] backend/local: finished building terraform.Context
+2020/07/15 11:34:58 [TRACE] backend/local: requesting interactive input, if necessary
+2020/07/15 11:34:58 [TRACE] Context.Input: Prompting for provider arguments
+2020/07/15 11:34:58 [TRACE] Context.Input: Provider provider.null implied by resource block at main.tf:1,1-35
+2020/07/15 11:34:58 [TRACE] Context.Input: Input for provider.null: map[string]cty.Value{}
+2020/07/15 11:34:58 [TRACE] backend/local: running validation operation
+2020/07/15 11:34:58 [INFO] terraform: building graph: GraphTypeValidate
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/07/15 11:34:58 [TRACE] ConfigTransformer: Starting for path: 
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  null_resource.cluster - *terraform.NodeValidatableResource
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.LocalTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.OutputTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.StateTransformer
+2020/07/15 11:34:58 [TRACE] StateTransformer: creating nodes for deposed instance objects only
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2020/07/15 11:34:58 [TRACE] AttachResourceConfigTransformer: attaching to "null_resource.cluster" (*terraform.NodeValidatableResource) config from main.tf:1,1-35
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2020/07/15 11:34:58 [TRACE] MissingProviderTransformer: added implicit provisioner local-exec, first implied by null_resource.cluster
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer with new graph:
+  null_resource.cluster - *terraform.NodeValidatableResource
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2020/07/15 11:34:58 [TRACE] ProvisionerTransformer: null_resource.cluster is provisioned by local-exec ("provisioner.local-exec")
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ProvisionerTransformer with new graph:
+  null_resource.cluster - *terraform.NodeValidatableResource
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  null_resource.cluster - *terraform.NodeValidatableResource
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2020/07/15 11:34:58 [DEBUG] adding implicit provider configuration provider.null, implied first by null_resource.cluster
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer with new graph:
+  null_resource.cluster - *terraform.NodeValidatableResource
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2020/07/15 11:34:58 [TRACE] ProviderTransformer: null_resource.cluster is provided by provider.null or inherited equivalent
+2020/07/15 11:34:58 [TRACE] ProviderTransformer: exact match for provider.null serving null_resource.cluster
+2020/07/15 11:34:58 [DEBUG] ProviderTransformer: "null_resource.cluster" (*terraform.NodeValidatableResource) needs provider.null
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2020/07/15 11:34:58 [TRACE] AttachSchemaTransformer: attaching resource schema to null_resource.cluster
+2020/07/15 11:34:58 [TRACE] AttachSchemaTransformer: attaching provisioner "local-exec" config schema to null_resource.cluster
+2020/07/15 11:34:58 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.null
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/07/15 11:34:58 [DEBUG] ReferenceTransformer: "null_resource.cluster" references: []
+2020/07/15 11:34:58 [DEBUG] ReferenceTransformer: "provisioner.local-exec" references: []
+2020/07/15 11:34:58 [DEBUG] ReferenceTransformer: "provider.null" references: []
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.CloseProvisionerTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.CloseProvisionerTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+    null_resource.cluster - *terraform.NodeValidatableResource
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+    null_resource.cluster - *terraform.NodeValidatableResource
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.null (close) - *terraform.graphNodeCloseProvider
+    provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster - *terraform.NodeValidatableResource
+  null_resource.cluster - *terraform.NodeValidatableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster - *terraform.NodeValidatableResource
+  provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+    null_resource.cluster - *terraform.NodeValidatableResource
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.null (close) - *terraform.graphNodeCloseProvider
+    provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+  ------
+2020/07/15 11:34:58 [DEBUG] Starting graph walk: walkValidate
+2020/07/15 11:34:58 [TRACE] dag/walk: updating graph
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "null_resource.cluster"
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "provisioner.local-exec"
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "provider.null"
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "meta.count-boundary (EachMode fixup)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "provider.null (close)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "provisioner.local-exec (close)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "root"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "null_resource.cluster" waiting on "provider.null"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "root" waiting on "provider.null (close)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "root" waiting on "provisioner.local-exec (close)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "null_resource.cluster"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "provider.null (close)" waiting on "null_resource.cluster"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "provisioner.local-exec (close)" waiting on "null_resource.cluster"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "root" waiting on "meta.count-boundary (EachMode fixup)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "null_resource.cluster" waiting on "provisioner.local-exec"
+2020/07/15 11:34:58 [TRACE] dag/walk: dependencies changed for "null_resource.cluster", sending new deps
+2020/07/15 11:34:58 [TRACE] dag/walk: dependencies changed for "root", sending new deps
+2020/07/15 11:34:58 [TRACE] dag/walk: dependencies changed for "meta.count-boundary (EachMode fixup)", sending new deps
+2020/07/15 11:34:58 [TRACE] dag/walk: dependencies changed for "provider.null (close)", sending new deps
+2020/07/15 11:34:58 [TRACE] dag/walk: dependencies changed for "provisioner.local-exec (close)", sending new deps
+2020/07/15 11:34:58 [TRACE] dag/walk: visiting "provisioner.local-exec"
+2020/07/15 11:34:58 [TRACE] vertex "provisioner.local-exec": starting visit (*terraform.NodeProvisioner)
+2020/07/15 11:34:58 [TRACE] vertex "provisioner.local-exec": evaluating
+2020/07/15 11:34:58 [TRACE] [walkValidate] Entering eval tree: provisioner.local-exec
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalInitProvisioner
+2020-07-15T11:34:58.290Z [DEBUG] plugin: starting plugin: path=/usr/local/bin/terraform args=[/usr/local/bin/terraform, internal-plugin, provisioner, local-exec]
+2020-07-15T11:34:58.290Z [DEBUG] plugin: plugin started: path=/usr/local/bin/terraform pid=10515
+2020-07-15T11:34:58.290Z [DEBUG] plugin: waiting for RPC address: path=/usr/local/bin/terraform
+2020/07/15 11:34:58 [TRACE] dag/walk: visiting "provider.null"
+2020/07/15 11:34:58 [TRACE] vertex "provider.null": starting visit (*terraform.NodeApplyableProvider)
+2020/07/15 11:34:58 [TRACE] vertex "provider.null": evaluating
+2020/07/15 11:34:58 [TRACE] [walkValidate] Entering eval tree: provider.null
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalInitProvider
+2020-07-15T11:34:58.290Z [INFO]  plugin: configuring client automatic mTLS
+2020/07/15 11:34:58 [INFO] Terraform version: 0.12.28  
+2020/07/15 11:34:58 [INFO] Go runtime version: go1.12.13
+2020/07/15 11:34:58 [INFO] CLI args: []string{"/usr/local/bin/terraform", "internal-plugin", "provisioner", "local-exec"}
+2020/07/15 11:34:58 [DEBUG] Attempting to open CLI config file: /root/.terraformrc
+2020/07/15 11:34:58 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/07/15 11:34:58 [INFO] CLI command args: []string{"internal-plugin", "provisioner", "local-exec"}
+local-exec-provisioner (internal) 2020/07/15 11:34:58 [INFO] Starting provisioner plugin local-exec
+{"@level":"debug","@message":"plugin address","@timestamp":"2020-07-15T11:34:58.358306Z","address":"/tmp/plugin743800798","network":"unix"}
+2020-07-15T11:34:58.363Z [DEBUG] plugin: using plugin: version=5
+2020-07-15T11:34:58.371Z [DEBUG] plugin: starting plugin: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 args=[/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4]
+2020-07-15T11:34:58.371Z [DEBUG] plugin: plugin started: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 pid=10530
+2020-07-15T11:34:58.371Z [DEBUG] plugin: waiting for RPC address: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4
+2020/07/15 11:34:58 [TRACE] [walkValidate] Exiting eval tree: provisioner.local-exec
+2020/07/15 11:34:58 [TRACE] vertex "provisioner.local-exec": visit complete
+2020-07-15T11:34:58.373Z [TRACE] plugin.stdio: waiting for stdio data
+2020-07-15T11:34:58.381Z [INFO]  plugin.terraform-provider-null_v2.1.2_x4: configuring server automatic mTLS: timestamp=2020-07-15T11:34:58.381Z
+2020-07-15T11:34:58.428Z [DEBUG] plugin.terraform-provider-null_v2.1.2_x4: plugin address: address=/tmp/plugin907441648 network=unix timestamp=2020-07-15T11:34:58.428Z
+2020-07-15T11:34:58.428Z [DEBUG] plugin: using plugin: version=5
+2020/07/15 11:34:58 [TRACE] BuiltinEvalContext: Initialized "null" provider for provider.null
+2020/07/15 11:34:58 [TRACE] <root>: eval: terraform.EvalNoop
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalValidateProvider
+2020/07/15 11:34:58 [TRACE] buildProviderConfig for provider.null: no configuration at all
+2020/07/15 11:34:58 [TRACE] GRPCProvider: GetSchema
+2020-07-15T11:34:58.524Z [TRACE] plugin.stdio: waiting for stdio data
+2020/07/15 11:34:58 [TRACE] GRPCProvider: PrepareProviderConfig
+2020-07-15T11:34:58.526Z [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
+2020/07/15 11:34:58 [TRACE] <root>: eval: terraform.EvalNoop
+2020/07/15 11:34:58 [TRACE] <root>: eval: terraform.EvalNoop
+2020/07/15 11:34:58 [TRACE] [walkValidate] Exiting eval tree: provider.null
+2020/07/15 11:34:58 [TRACE] vertex "provider.null": visit complete
+2020/07/15 11:34:58 [TRACE] dag/walk: visiting "null_resource.cluster"
+2020/07/15 11:34:58 [TRACE] vertex "null_resource.cluster": starting visit (*terraform.NodeValidatableResource)
+2020/07/15 11:34:58 [TRACE] vertex "null_resource.cluster": evaluating
+2020/07/15 11:34:58 [TRACE] [walkValidate] Entering eval tree: null_resource.cluster
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalValidateResource
+2020/07/15 11:34:58 [TRACE] GRPCProvider: ValidateResourceTypeConfig
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalGetProvisioner
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalValidateProvisioner
+2020/07/15 11:34:58 [TRACE] [walkValidate] Exiting eval tree: null_resource.cluster
+2020/07/15 11:34:58 [TRACE] vertex "null_resource.cluster": visit complete
+2020/07/15 11:34:58 [TRACE] dag/walk: visiting "meta.count-boundary (EachMode fixup)"
+2020/07/15 11:34:58 [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
+2020/07/15 11:34:58 [TRACE] vertex "meta.count-boundary (EachMode fixup)": evaluating
+2020/07/15 11:34:58 [TRACE] [walkValidate] Entering eval tree: meta.count-boundary (EachMode fixup)
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalCountFixZeroOneBoundaryGlobal
+2020/07/15 11:34:58 [TRACE] [walkValidate] Exiting eval tree: meta.count-boundary (EachMode fixup)
+2020/07/15 11:34:58 [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
+2020/07/15 11:34:58 [TRACE] dag/walk: visiting "provisioner.local-exec (close)"
+2020/07/15 11:34:58 [TRACE] vertex "provisioner.local-exec (close)": starting visit (*terraform.graphNodeCloseProvisioner)
+2020/07/15 11:34:58 [TRACE] vertex "provisioner.local-exec (close)": evaluating
+2020/07/15 11:34:58 [TRACE] [walkValidate] Entering eval tree: provisioner.local-exec (close)
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalCloseProvisioner
+2020/07/15 11:34:58 [TRACE] dag/walk: visiting "provider.null (close)"
+2020/07/15 11:34:58 [TRACE] vertex "provider.null (close)": starting visit (*terraform.graphNodeCloseProvider)
+2020/07/15 11:34:58 [TRACE] vertex "provider.null (close)": evaluating
+2020/07/15 11:34:58 [TRACE] [walkValidate] Entering eval tree: provider.null (close)
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalCloseProvider
+2020/07/15 11:34:58 [TRACE] GRPCProvider: Close
+2020-07-15T11:34:58.532Z [DEBUG] plugin: plugin process exited: path=/usr/local/bin/terraform pid=10515
+2020-07-15T11:34:58.532Z [DEBUG] plugin: plugin exited
+2020/07/15 11:34:58 [TRACE] [walkValidate] Exiting eval tree: provisioner.local-exec (close)
+2020/07/15 11:34:58 [TRACE] vertex "provisioner.local-exec (close)": visit complete
+2020-07-15T11:34:58.532Z [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2020-07-15T11:34:58.533Z [DEBUG] plugin: plugin process exited: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 pid=10530
+2020-07-15T11:34:58.533Z [DEBUG] plugin: plugin exited
+2020/07/15 11:34:58 [TRACE] [walkValidate] Exiting eval tree: provider.null (close)
+2020/07/15 11:34:58 [TRACE] vertex "provider.null (close)": visit complete
+2020/07/15 11:34:58 [TRACE] dag/walk: visiting "root"
+2020/07/15 11:34:58 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2020/07/15 11:34:58 [TRACE] vertex "root": visit complete
+2020/07/15 11:34:58 [INFO] backend/local: apply calling Refresh
+2020/07/15 11:34:58 [INFO] terraform: building graph: GraphTypeRefresh
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/07/15 11:34:58 [TRACE] ConfigTransformer: Starting for path: 
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  null_resource.cluster - *terraform.NodeRefreshableManagedResource
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/07/15 11:34:58 [TRACE] ConfigTransformer: Starting for path: 
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.StateTransformer
+2020/07/15 11:34:58 [TRACE] StateTransformer: creating nodes for deposed instance objects only
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2020/07/15 11:34:58 [TRACE] AttachResourceConfigTransformer: attaching to "null_resource.cluster" (*terraform.NodeRefreshableManagedResource) config from main.tf:1,1-35
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.LocalTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.OutputTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  null_resource.cluster - *terraform.NodeRefreshableManagedResource
+  ------
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2020/07/15 11:34:58 [DEBUG] adding implicit provider configuration provider.null, implied first by null_resource.cluster
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer with new graph:
+  null_resource.cluster - *terraform.NodeRefreshableManagedResource
+  provider.null - *terraform.NodeApplyableProvider
+  ------
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2020/07/15 11:34:58 [TRACE] ProviderTransformer: null_resource.cluster is provided by provider.null or inherited equivalent
+2020/07/15 11:34:58 [TRACE] ProviderTransformer: exact match for provider.null serving null_resource.cluster
+2020/07/15 11:34:58 [DEBUG] ProviderTransformer: "null_resource.cluster" (*terraform.NodeRefreshableManagedResource) needs provider.null
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  null_resource.cluster - *terraform.NodeRefreshableManagedResource
+    provider.null - *terraform.NodeApplyableProvider
+  provider.null - *terraform.NodeApplyableProvider
+  ------
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  null_resource.cluster - *terraform.NodeRefreshableManagedResource
+    provider.null - *terraform.NodeApplyableProvider
+  provider.null - *terraform.NodeApplyableProvider
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2020/07/15 11:34:58 [TRACE] AttachSchemaTransformer: attaching resource schema to null_resource.cluster
+2020/07/15 11:34:58 [TRACE] AttachSchemaTransformer: attaching provisioner "local-exec" config schema to null_resource.cluster
+2020/07/15 11:34:58 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.null
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/07/15 11:34:58 [DEBUG] ReferenceTransformer: "null_resource.cluster" references: []
+2020/07/15 11:34:58 [DEBUG] ReferenceTransformer: "provider.null" references: []
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2020/07/15 11:34:58 [TRACE] AttachDependenciesTransformer: null_resource.cluster depends on []
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  null_resource.cluster - *terraform.NodeRefreshableManagedResource
+    provider.null - *terraform.NodeApplyableProvider
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster - *terraform.NodeRefreshableManagedResource
+    provider.null - *terraform.NodeApplyableProvider
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.RootTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  null_resource.cluster - *terraform.NodeRefreshableManagedResource
+    provider.null - *terraform.NodeApplyableProvider
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster - *terraform.NodeRefreshableManagedResource
+  ------
+2020/07/15 11:34:58 [DEBUG] Starting graph walk: walkRefresh
+2020/07/15 11:34:58 [TRACE] dag/walk: updating graph
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "null_resource.cluster"
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "provider.null"
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "provider.null (close)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "null_resource.cluster" waiting on "provider.null"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "provider.null (close)" waiting on "null_resource.cluster"
+2020/07/15 11:34:58 [TRACE] dag/walk: dependencies changed for "null_resource.cluster", sending new deps
+2020/07/15 11:34:58 [TRACE] dag/walk: dependencies changed for "provider.null (close)", sending new deps
+2020/07/15 11:34:58 [TRACE] dag/walk: visiting "provider.null"
+2020/07/15 11:34:58 [TRACE] vertex "provider.null": starting visit (*terraform.NodeApplyableProvider)
+2020/07/15 11:34:58 [TRACE] vertex "provider.null": evaluating
+2020/07/15 11:34:58 [TRACE] [walkRefresh] Entering eval tree: provider.null
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalInitProvider
+2020-07-15T11:34:58.535Z [INFO]  plugin: configuring client automatic mTLS
+2020-07-15T11:34:58.579Z [DEBUG] plugin: starting plugin: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 args=[/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4]
+2020-07-15T11:34:58.580Z [DEBUG] plugin: plugin started: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 pid=10537
+2020-07-15T11:34:58.580Z [DEBUG] plugin: waiting for RPC address: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4
+2020-07-15T11:34:58.587Z [INFO]  plugin.terraform-provider-null_v2.1.2_x4: configuring server automatic mTLS: timestamp=2020-07-15T11:34:58.587Z
+2020-07-15T11:34:58.635Z [DEBUG] plugin.terraform-provider-null_v2.1.2_x4: plugin address: address=/tmp/plugin925878125 network=unix timestamp=2020-07-15T11:34:58.634Z
+2020-07-15T11:34:58.635Z [DEBUG] plugin: using plugin: version=5
+2020/07/15 11:34:58 [TRACE] BuiltinEvalContext: Initialized "null" provider for provider.null
+2020/07/15 11:34:58 [TRACE] <root>: eval: terraform.EvalNoop
+2020/07/15 11:34:58 [TRACE] <root>: eval: terraform.EvalNoop
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalConfigProvider
+2020/07/15 11:34:58 [TRACE] buildProviderConfig for provider.null: no configuration at all
+2020/07/15 11:34:58 [TRACE] GRPCProvider: GetSchema
+2020-07-15T11:34:58.729Z [TRACE] plugin.stdio: waiting for stdio data
+2020/07/15 11:34:58 [TRACE] GRPCProvider: Configure
+2020-07-15T11:34:58.732Z [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
+2020/07/15 11:34:58 [TRACE] [walkRefresh] Exiting eval tree: provider.null
+2020/07/15 11:34:58 [TRACE] vertex "provider.null": visit complete
+2020/07/15 11:34:58 [TRACE] dag/walk: visiting "null_resource.cluster"
+2020/07/15 11:34:58 [TRACE] vertex "null_resource.cluster": starting visit (*terraform.NodeRefreshableManagedResource)
+2020/07/15 11:34:58 [TRACE] vertex "null_resource.cluster": expanding dynamic subgraph
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ResourceCountTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ResourceCountTransformer with new graph:
+  null_resource.cluster - *terraform.NodeRefreshableManagedResourceInstance
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.OrphanResourceCountTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.OrphanResourceCountTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/07/15 11:34:58 [WARN] no schema for provisioner "local-exec" is attached to null_resource.cluster, so provisioner block references cannot be detected
+2020/07/15 11:34:58 [WARN] no schema for provisioner "local-exec" is attached to null_resource.cluster, so provisioner block references cannot be detected
+2020/07/15 11:34:58 [DEBUG] ReferenceTransformer: "null_resource.cluster" references: []
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.RootTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] vertex "null_resource.cluster": entering dynamic subgraph
+2020/07/15 11:34:58 [TRACE] dag/walk: updating graph
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "null_resource.cluster"
+2020/07/15 11:34:58 [TRACE] dag/walk: visiting "null_resource.cluster"
+2020/07/15 11:34:58 [TRACE] vertex "null_resource.cluster": starting visit (*terraform.NodeRefreshableManagedResourceInstance)
+2020/07/15 11:34:58 [TRACE] NodeRefreshableManagedResourceInstance: null_resource.cluster will be refreshed
+2020/07/15 11:34:58 [TRACE] vertex "null_resource.cluster": evaluating
+2020/07/15 11:34:58 [TRACE] [walkRefresh] Entering eval tree: null_resource.cluster
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalReadState
+2020/07/15 11:34:58 [TRACE] EvalReadState: reading state for null_resource.cluster
+2020/07/15 11:34:58 [TRACE] UpgradeResourceState: schema version of null_resource.cluster is still 0; calling provider "registry.terraform.io/-/null" for any other minor fixups
+2020/07/15 11:34:58 [TRACE] GRPCProvider: UpgradeResourceState
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalRefreshDependencies
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalRefresh
+2020/07/15 11:34:58 [TRACE] GRPCProvider: ReadResource
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalWriteState
+2020/07/15 11:34:58 [TRACE] EvalWriteState: recording 0 dependencies for null_resource.cluster
+2020/07/15 11:34:58 [TRACE] EvalWriteState: writing current state object for null_resource.cluster
+2020/07/15 11:34:58 [TRACE] [walkRefresh] Exiting eval tree: null_resource.cluster
+2020/07/15 11:34:58 [TRACE] vertex "null_resource.cluster": visit complete
+2020/07/15 11:34:58 [TRACE] vertex "null_resource.cluster": dynamic subgraph completed successfully
+2020/07/15 11:34:58 [TRACE] vertex "null_resource.cluster": visit complete
+2020/07/15 11:34:58 [TRACE] dag/walk: visiting "provider.null (close)"
+2020/07/15 11:34:58 [TRACE] vertex "provider.null (close)": starting visit (*terraform.graphNodeCloseProvider)
+2020/07/15 11:34:58 [TRACE] vertex "provider.null (close)": evaluating
+2020/07/15 11:34:58 [TRACE] [walkRefresh] Entering eval tree: provider.null (close)
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalCloseProvider
+2020/07/15 11:34:58 [TRACE] GRPCProvider: Close
+2020-07-15T11:34:58.736Z [DEBUG] plugin: plugin process exited: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 pid=10537
+2020-07-15T11:34:58.736Z [DEBUG] plugin: plugin exited
+2020/07/15 11:34:58 [TRACE] [walkRefresh] Exiting eval tree: provider.null (close)
+2020/07/15 11:34:58 [TRACE] vertex "provider.null (close)": visit complete
+2020/07/15 11:34:58 [INFO] backend/local: apply calling Plan
+2020/07/15 11:34:58 [INFO] terraform: building graph: GraphTypePlan
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/07/15 11:34:58 [TRACE] ConfigTransformer: Starting for path: 
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  null_resource.cluster - *terraform.NodePlannableResource
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.LocalTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.OutputTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.StateTransformer
+2020/07/15 11:34:58 [TRACE] StateTransformer: creating nodes for deposed instance objects only
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2020/07/15 11:34:58 [TRACE] AttachResourceConfigTransformer: attaching to "null_resource.cluster" (*terraform.NodePlannableResource) config from main.tf:1,1-35
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2020/07/15 11:34:58 [TRACE] MissingProviderTransformer: added implicit provisioner local-exec, first implied by null_resource.cluster
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer with new graph:
+  null_resource.cluster - *terraform.NodePlannableResource
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2020/07/15 11:34:58 [TRACE] ProvisionerTransformer: null_resource.cluster is provisioned by local-exec ("provisioner.local-exec")
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ProvisionerTransformer with new graph:
+  null_resource.cluster - *terraform.NodePlannableResource
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  null_resource.cluster - *terraform.NodePlannableResource
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2020/07/15 11:34:58 [DEBUG] adding implicit provider configuration provider.null, implied first by null_resource.cluster
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer with new graph:
+  null_resource.cluster - *terraform.NodePlannableResource
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2020/07/15 11:34:58 [TRACE] ProviderTransformer: null_resource.cluster is provided by provider.null or inherited equivalent
+2020/07/15 11:34:58 [TRACE] ProviderTransformer: exact match for provider.null serving null_resource.cluster
+2020/07/15 11:34:58 [DEBUG] ProviderTransformer: "null_resource.cluster" (*terraform.NodePlannableResource) needs provider.null
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2020/07/15 11:34:58 [TRACE] AttachSchemaTransformer: attaching resource schema to null_resource.cluster
+2020/07/15 11:34:58 [TRACE] AttachSchemaTransformer: attaching provisioner "local-exec" config schema to null_resource.cluster
+2020/07/15 11:34:58 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.null
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/07/15 11:34:58 [DEBUG] ReferenceTransformer: "provider.null" references: []
+2020/07/15 11:34:58 [DEBUG] ReferenceTransformer: "null_resource.cluster" references: []
+2020/07/15 11:34:58 [DEBUG] ReferenceTransformer: "provisioner.local-exec" references: []
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2020/07/15 11:34:58 [TRACE] ForcedCBDTransformer: "null_resource.cluster" (*terraform.NodePlannableResource) has no CBD descendent, so skipping
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.CloseProvisionerTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.CloseProvisionerTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+    null_resource.cluster - *terraform.NodePlannableResource
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+    null_resource.cluster - *terraform.NodePlannableResource
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.null (close) - *terraform.graphNodeCloseProvider
+    provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster - *terraform.NodePlannableResource
+  null_resource.cluster - *terraform.NodePlannableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster - *terraform.NodePlannableResource
+  provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+    null_resource.cluster - *terraform.NodePlannableResource
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.null (close) - *terraform.graphNodeCloseProvider
+    provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+  ------
+2020/07/15 11:34:58 [DEBUG] Starting graph walk: walkPlan
+2020/07/15 11:34:58 [TRACE] dag/walk: updating graph
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "provisioner.local-exec"
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "provider.null"
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "meta.count-boundary (EachMode fixup)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "provider.null (close)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "provisioner.local-exec (close)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "root"
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "null_resource.cluster"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "provider.null (close)" waiting on "null_resource.cluster"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "provisioner.local-exec (close)" waiting on "null_resource.cluster"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "root" waiting on "provisioner.local-exec (close)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "root" waiting on "provider.null (close)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "root" waiting on "meta.count-boundary (EachMode fixup)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "null_resource.cluster" waiting on "provider.null"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "null_resource.cluster"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "null_resource.cluster" waiting on "provisioner.local-exec"
+2020/07/15 11:34:58 [TRACE] dag/walk: dependencies changed for "meta.count-boundary (EachMode fixup)", sending new deps
+2020/07/15 11:34:58 [TRACE] dag/walk: dependencies changed for "provider.null (close)", sending new deps
+2020/07/15 11:34:58 [TRACE] dag/walk: dependencies changed for "provisioner.local-exec (close)", sending new deps
+2020/07/15 11:34:58 [TRACE] dag/walk: dependencies changed for "root", sending new deps
+2020/07/15 11:34:58 [TRACE] dag/walk: dependencies changed for "null_resource.cluster", sending new deps
+2020/07/15 11:34:58 [TRACE] dag/walk: visiting "provisioner.local-exec"
+2020/07/15 11:34:58 [TRACE] vertex "provisioner.local-exec": starting visit (*terraform.NodeProvisioner)
+2020/07/15 11:34:58 [TRACE] vertex "provisioner.local-exec": evaluating
+2020/07/15 11:34:58 [TRACE] [walkPlan] Entering eval tree: provisioner.local-exec
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalInitProvisioner
+2020-07-15T11:34:58.738Z [DEBUG] plugin: starting plugin: path=/usr/local/bin/terraform args=[/usr/local/bin/terraform, internal-plugin, provisioner, local-exec]
+2020-07-15T11:34:58.739Z [DEBUG] plugin: plugin started: path=/usr/local/bin/terraform pid=10544
+2020-07-15T11:34:58.739Z [DEBUG] plugin: waiting for RPC address: path=/usr/local/bin/terraform
+2020/07/15 11:34:58 [TRACE] dag/walk: visiting "provider.null"
+2020/07/15 11:34:58 [TRACE] vertex "provider.null": starting visit (*terraform.NodeApplyableProvider)
+2020/07/15 11:34:58 [TRACE] vertex "provider.null": evaluating
+2020/07/15 11:34:58 [TRACE] [walkPlan] Entering eval tree: provider.null
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalInitProvider
+2020-07-15T11:34:58.739Z [INFO]  plugin: configuring client automatic mTLS
+2020/07/15 11:34:58 [INFO] Terraform version: 0.12.28  
+2020/07/15 11:34:58 [INFO] Go runtime version: go1.12.13
+2020/07/15 11:34:58 [INFO] CLI args: []string{"/usr/local/bin/terraform", "internal-plugin", "provisioner", "local-exec"}
+2020/07/15 11:34:58 [DEBUG] Attempting to open CLI config file: /root/.terraformrc
+2020/07/15 11:34:58 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/07/15 11:34:58 [INFO] CLI command args: []string{"internal-plugin", "provisioner", "local-exec"}
+local-exec-provisioner (internal) 2020/07/15 11:34:58 [INFO] Starting provisioner plugin local-exec
+{"@level":"debug","@message":"plugin address","@timestamp":"2020-07-15T11:34:58.804289Z","address":"/tmp/plugin501787855","network":"unix"}
+2020-07-15T11:34:58.815Z [DEBUG] plugin: starting plugin: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 args=[/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4]
+2020-07-15T11:34:58.816Z [DEBUG] plugin: plugin started: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 pid=10560
+2020-07-15T11:34:58.816Z [DEBUG] plugin: waiting for RPC address: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4
+2020-07-15T11:34:58.817Z [DEBUG] plugin: using plugin: version=5
+2020/07/15 11:34:58 [TRACE] [walkPlan] Exiting eval tree: provisioner.local-exec
+2020/07/15 11:34:58 [TRACE] vertex "provisioner.local-exec": visit complete
+2020-07-15T11:34:58.818Z [TRACE] plugin.stdio: waiting for stdio data
+2020-07-15T11:34:58.827Z [INFO]  plugin.terraform-provider-null_v2.1.2_x4: configuring server automatic mTLS: timestamp=2020-07-15T11:34:58.826Z
+2020-07-15T11:34:58.872Z [DEBUG] plugin.terraform-provider-null_v2.1.2_x4: plugin address: address=/tmp/plugin183297719 network=unix timestamp=2020-07-15T11:34:58.872Z
+2020-07-15T11:34:58.872Z [DEBUG] plugin: using plugin: version=5
+2020/07/15 11:34:58 [TRACE] BuiltinEvalContext: Initialized "null" provider for provider.null
+2020/07/15 11:34:58 [TRACE] <root>: eval: terraform.EvalNoop
+2020/07/15 11:34:58 [TRACE] <root>: eval: terraform.EvalNoop
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalConfigProvider
+2020/07/15 11:34:58 [TRACE] buildProviderConfig for provider.null: no configuration at all
+2020/07/15 11:34:58 [TRACE] GRPCProvider: GetSchema
+2020-07-15T11:34:58.967Z [TRACE] plugin.stdio: waiting for stdio data
+2020/07/15 11:34:58 [TRACE] GRPCProvider: Configure
+2020-07-15T11:34:58.970Z [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
+2020/07/15 11:34:58 [TRACE] [walkPlan] Exiting eval tree: provider.null
+2020/07/15 11:34:58 [TRACE] vertex "provider.null": visit complete
+2020/07/15 11:34:58 [TRACE] dag/walk: visiting "null_resource.cluster"
+2020/07/15 11:34:58 [TRACE] vertex "null_resource.cluster": starting visit (*terraform.NodePlannableResource)
+2020/07/15 11:34:58 [TRACE] vertex "null_resource.cluster": evaluating
+2020/07/15 11:34:58 [TRACE] [walkPlan] Entering eval tree: null_resource.cluster
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalWriteResourceState
+2020/07/15 11:34:58 [TRACE] [walkPlan] Exiting eval tree: null_resource.cluster
+2020/07/15 11:34:58 [TRACE] vertex "null_resource.cluster": expanding dynamic subgraph
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ResourceCountTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ResourceCountTransformer with new graph:
+  null_resource.cluster - *terraform.NodePlannableResourceInstance
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.OrphanResourceCountTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.OrphanResourceCountTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/07/15 11:34:58 [DEBUG] ReferenceTransformer: "null_resource.cluster" references: []
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.RootTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] vertex "null_resource.cluster": entering dynamic subgraph
+2020/07/15 11:34:58 [TRACE] dag/walk: updating graph
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "null_resource.cluster"
+2020/07/15 11:34:58 [TRACE] dag/walk: visiting "null_resource.cluster"
+2020/07/15 11:34:58 [TRACE] vertex "null_resource.cluster": starting visit (*terraform.NodePlannableResourceInstance)
+2020/07/15 11:34:58 [TRACE] vertex "null_resource.cluster": evaluating
+2020/07/15 11:34:58 [TRACE] [walkPlan] Entering eval tree: null_resource.cluster
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalReadState
+2020/07/15 11:34:58 [TRACE] EvalReadState: reading state for null_resource.cluster
+2020/07/15 11:34:58 [TRACE] UpgradeResourceState: schema version of null_resource.cluster is still 0; calling provider "registry.terraform.io/-/null" for any other minor fixups
+2020/07/15 11:34:58 [TRACE] GRPCProvider: UpgradeResourceState
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalValidateSelfRef
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalDiff
+2020/07/15 11:34:58 [TRACE] Re-validating config for "null_resource.cluster"
+2020/07/15 11:34:58 [TRACE] GRPCProvider: ValidateResourceTypeConfig
+2020/07/15 11:34:58 [TRACE] GRPCProvider: PlanResourceChange
+2020-07-15T11:34:58.972Z [DEBUG] plugin.terraform-provider-null_v2.1.2_x4: 2020/07/15 11:34:58 [DEBUG] Instance Diff is nil in SimpleDiff()
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalCheckPreventDestroy
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalWriteState
+2020/07/15 11:34:58 [TRACE] EvalWriteState: writing current state object for null_resource.cluster
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalWriteDiff
+2020/07/15 11:34:58 [TRACE] EvalWriteDiff: recorded NoOp change for null_resource.cluster
+2020/07/15 11:34:58 [TRACE] [walkPlan] Exiting eval tree: null_resource.cluster
+2020/07/15 11:34:58 [TRACE] vertex "null_resource.cluster": visit complete
+2020/07/15 11:34:58 [TRACE] vertex "null_resource.cluster": dynamic subgraph completed successfully
+2020/07/15 11:34:58 [TRACE] vertex "null_resource.cluster": visit complete
+2020/07/15 11:34:58 [TRACE] dag/walk: visiting "meta.count-boundary (EachMode fixup)"
+2020/07/15 11:34:58 [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
+2020/07/15 11:34:58 [TRACE] vertex "meta.count-boundary (EachMode fixup)": evaluating
+2020/07/15 11:34:58 [TRACE] [walkPlan] Entering eval tree: meta.count-boundary (EachMode fixup)
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalCountFixZeroOneBoundaryGlobal
+2020/07/15 11:34:58 [TRACE] [walkPlan] Exiting eval tree: meta.count-boundary (EachMode fixup)
+2020/07/15 11:34:58 [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
+2020/07/15 11:34:58 [TRACE] dag/walk: visiting "provisioner.local-exec (close)"
+2020/07/15 11:34:58 [TRACE] vertex "provisioner.local-exec (close)": starting visit (*terraform.graphNodeCloseProvisioner)
+2020/07/15 11:34:58 [TRACE] vertex "provisioner.local-exec (close)": evaluating
+2020/07/15 11:34:58 [TRACE] [walkPlan] Entering eval tree: provisioner.local-exec (close)
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalCloseProvisioner
+2020/07/15 11:34:58 [TRACE] dag/walk: visiting "provider.null (close)"
+2020/07/15 11:34:58 [TRACE] vertex "provider.null (close)": starting visit (*terraform.graphNodeCloseProvider)
+2020/07/15 11:34:58 [TRACE] vertex "provider.null (close)": evaluating
+2020/07/15 11:34:58 [TRACE] [walkPlan] Entering eval tree: provider.null (close)
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalCloseProvider
+2020/07/15 11:34:58 [TRACE] GRPCProvider: Close
+2020-07-15T11:34:58.976Z [DEBUG] plugin: plugin process exited: path=/usr/local/bin/terraform pid=10544
+2020-07-15T11:34:58.976Z [DEBUG] plugin: plugin exited
+2020/07/15 11:34:58 [TRACE] [walkPlan] Exiting eval tree: provisioner.local-exec (close)
+2020/07/15 11:34:58 [TRACE] vertex "provisioner.local-exec (close)": visit complete
+2020-07-15T11:34:58.976Z [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Canceled desc = grpc: the client connection is closing"
+2020-07-15T11:34:58.978Z [DEBUG] plugin: plugin process exited: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 pid=10560
+2020-07-15T11:34:58.978Z [DEBUG] plugin: plugin exited
+2020/07/15 11:34:58 [TRACE] [walkPlan] Exiting eval tree: provider.null (close)
+2020/07/15 11:34:58 [TRACE] vertex "provider.null (close)": visit complete
+2020/07/15 11:34:58 [TRACE] dag/walk: visiting "root"
+2020/07/15 11:34:58 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2020/07/15 11:34:58 [TRACE] vertex "root": visit complete
+2020/07/15 11:34:58 [INFO] backend/local: apply calling Apply
+2020/07/15 11:34:58 [INFO] terraform: building graph: GraphTypeApply
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/07/15 11:34:58 [TRACE] ConfigTransformer: Starting for path: 
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.DiffTransformer
+2020/07/15 11:34:58 [TRACE] DiffTransformer starting
+2020/07/15 11:34:58 [TRACE] DiffTransformer: found NoOp change for null_resource.cluster 
+2020/07/15 11:34:58 [TRACE] DiffTransformer complete
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.DiffTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.OrphanResourceTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.OrphanResourceTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2020/07/15 11:34:58 [TRACE] AttachResourceConfigTransformer: attaching to "null_resource.cluster (prepare state)" (*terraform.NodeApplyableResource) config from main.tf:1,1-35
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2020/07/15 11:34:58 [TRACE] MissingProviderTransformer: added implicit provisioner local-exec, first implied by null_resource.cluster (prepare state)
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer with new graph:
+  null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2020/07/15 11:34:58 [TRACE] ProvisionerTransformer: null_resource.cluster (prepare state) is provisioned by local-exec ("provisioner.local-exec")
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ProvisionerTransformer with new graph:
+  null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.LocalTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.OutputTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2020/07/15 11:34:58 [DEBUG] adding implicit provider configuration provider.null, implied first by null_resource.cluster (prepare state)
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer with new graph:
+  null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2020/07/15 11:34:58 [TRACE] ProviderTransformer: null_resource.cluster (prepare state) is provided by provider.null or inherited equivalent
+2020/07/15 11:34:58 [TRACE] ProviderTransformer: exact match for provider.null serving null_resource.cluster (prepare state)
+2020/07/15 11:34:58 [DEBUG] ProviderTransformer: "null_resource.cluster (prepare state)" (*terraform.NodeApplyableResource) needs provider.null
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2020/07/15 11:34:58 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2020/07/15 11:34:58 [TRACE] AttachSchemaTransformer: attaching resource schema to null_resource.cluster (prepare state)
+2020/07/15 11:34:58 [TRACE] AttachSchemaTransformer: attaching provisioner "local-exec" config schema to null_resource.cluster (prepare state)
+2020/07/15 11:34:58 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.null
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/07/15 11:34:58 [DEBUG] ReferenceTransformer: "provider.null" references: []
+2020/07/15 11:34:58 [DEBUG] ReferenceTransformer: "null_resource.cluster (prepare state)" references: []
+2020/07/15 11:34:58 [DEBUG] ReferenceTransformer: "provisioner.local-exec" references: []
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.CBDEdgeTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.CBDEdgeTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.PruneUnusedValuesTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.PruneUnusedValuesTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+    provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.CloseProvisionerTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.CloseProvisionerTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+    provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+    null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+    provider.null - *terraform.NodeApplyableProvider
+  provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+    null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.null (close) - *terraform.graphNodeCloseProvider
+    provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+  ------
+2020/07/15 11:34:58 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2020/07/15 11:34:58 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+  null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+    provider.null - *terraform.NodeApplyableProvider
+    provisioner.local-exec - *terraform.NodeProvisioner
+  provider.null - *terraform.NodeApplyableProvider
+  provider.null (close) - *terraform.graphNodeCloseProvider
+    null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+  provisioner.local-exec - *terraform.NodeProvisioner
+  provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+    null_resource.cluster (prepare state) - *terraform.NodeApplyableResource
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.null (close) - *terraform.graphNodeCloseProvider
+    provisioner.local-exec (close) - *terraform.graphNodeCloseProvisioner
+  ------
+2020/07/15 11:34:58 [DEBUG] Starting graph walk: walkApply
+2020/07/15 11:34:58 [TRACE] dag/walk: updating graph
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "provider.null"
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "meta.count-boundary (EachMode fixup)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "provider.null (close)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "provisioner.local-exec (close)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "root"
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "null_resource.cluster (prepare state)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added new vertex: "provisioner.local-exec"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "root" waiting on "provisioner.local-exec (close)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "null_resource.cluster (prepare state)" waiting on "provisioner.local-exec"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "provisioner.local-exec (close)" waiting on "null_resource.cluster (prepare state)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "root" waiting on "meta.count-boundary (EachMode fixup)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "root" waiting on "provider.null (close)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "null_resource.cluster (prepare state)"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "null_resource.cluster (prepare state)" waiting on "provider.null"
+2020/07/15 11:34:58 [TRACE] dag/walk: added edge: "provider.null (close)" waiting on "null_resource.cluster (prepare state)"
+2020/07/15 11:34:58 [TRACE] dag/walk: dependencies changed for "provider.null (close)", sending new deps
+2020/07/15 11:34:58 [TRACE] dag/walk: dependencies changed for "root", sending new deps
+2020/07/15 11:34:58 [TRACE] dag/walk: dependencies changed for "null_resource.cluster (prepare state)", sending new deps
+2020/07/15 11:34:58 [TRACE] dag/walk: dependencies changed for "provisioner.local-exec (close)", sending new deps
+2020/07/15 11:34:58 [TRACE] dag/walk: dependencies changed for "meta.count-boundary (EachMode fixup)", sending new deps
+2020/07/15 11:34:58 [TRACE] dag/walk: visiting "provisioner.local-exec"
+2020/07/15 11:34:58 [TRACE] vertex "provisioner.local-exec": starting visit (*terraform.NodeProvisioner)
+2020/07/15 11:34:58 [TRACE] vertex "provisioner.local-exec": evaluating
+2020/07/15 11:34:58 [TRACE] [walkApply] Entering eval tree: provisioner.local-exec
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalInitProvisioner
+2020-07-15T11:34:58.979Z [DEBUG] plugin: starting plugin: path=/usr/local/bin/terraform args=[/usr/local/bin/terraform, internal-plugin, provisioner, local-exec]
+2020-07-15T11:34:58.979Z [DEBUG] plugin: plugin started: path=/usr/local/bin/terraform pid=10567
+2020-07-15T11:34:58.979Z [DEBUG] plugin: waiting for RPC address: path=/usr/local/bin/terraform
+2020/07/15 11:34:58 [TRACE] dag/walk: visiting "provider.null"
+2020/07/15 11:34:58 [TRACE] vertex "provider.null": starting visit (*terraform.NodeApplyableProvider)
+2020/07/15 11:34:58 [TRACE] vertex "provider.null": evaluating
+2020/07/15 11:34:58 [TRACE] [walkApply] Entering eval tree: provider.null
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:58 [TRACE] <root>: eval: *terraform.EvalInitProvider
+2020-07-15T11:34:58.979Z [INFO]  plugin: configuring client automatic mTLS
+2020/07/15 11:34:59 [INFO] Terraform version: 0.12.28  
+2020/07/15 11:34:59 [INFO] Go runtime version: go1.12.13
+2020/07/15 11:34:59 [INFO] CLI args: []string{"/usr/local/bin/terraform", "internal-plugin", "provisioner", "local-exec"}
+2020/07/15 11:34:59 [DEBUG] Attempting to open CLI config file: /root/.terraformrc
+2020/07/15 11:34:59 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/07/15 11:34:59 [INFO] CLI command args: []string{"internal-plugin", "provisioner", "local-exec"}
+local-exec-provisioner (internal) 2020/07/15 11:34:59 [INFO] Starting provisioner plugin local-exec
+{"@level":"debug","@message":"plugin address","@timestamp":"2020-07-15T11:34:59.046428Z","address":"/tmp/plugin299891048","network":"unix"}
+2020-07-15T11:34:59.052Z [DEBUG] plugin: using plugin: version=5
+2020-07-15T11:34:59.058Z [DEBUG] plugin: starting plugin: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 args=[/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4]
+2020-07-15T11:34:59.058Z [DEBUG] plugin: plugin started: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 pid=10582
+2020-07-15T11:34:59.058Z [DEBUG] plugin: waiting for RPC address: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4
+2020/07/15 11:34:59 [TRACE] [walkApply] Exiting eval tree: provisioner.local-exec
+2020/07/15 11:34:59 [TRACE] vertex "provisioner.local-exec": visit complete
+2020-07-15T11:34:59.059Z [TRACE] plugin.stdio: waiting for stdio data
+2020-07-15T11:34:59.066Z [INFO]  plugin.terraform-provider-null_v2.1.2_x4: configuring server automatic mTLS: timestamp=2020-07-15T11:34:59.066Z
+2020-07-15T11:34:59.112Z [DEBUG] plugin.terraform-provider-null_v2.1.2_x4: plugin address: address=/tmp/plugin101989942 network=unix timestamp=2020-07-15T11:34:59.112Z
+2020-07-15T11:34:59.112Z [DEBUG] plugin: using plugin: version=5
+2020/07/15 11:34:59 [TRACE] BuiltinEvalContext: Initialized "null" provider for provider.null
+2020/07/15 11:34:59 [TRACE] <root>: eval: terraform.EvalNoop
+2020/07/15 11:34:59 [TRACE] <root>: eval: terraform.EvalNoop
+2020/07/15 11:34:59 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/07/15 11:34:59 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:59 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/07/15 11:34:59 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/07/15 11:34:59 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/07/15 11:34:59 [TRACE] <root>: eval: *terraform.EvalConfigProvider
+2020/07/15 11:34:59 [TRACE] buildProviderConfig for provider.null: no configuration at all
+2020/07/15 11:34:59 [TRACE] GRPCProvider: GetSchema
+2020-07-15T11:34:59.213Z [TRACE] plugin.stdio: waiting for stdio data
+2020/07/15 11:34:59 [TRACE] GRPCProvider: Configure
+2020-07-15T11:34:59.215Z [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
+2020/07/15 11:34:59 [TRACE] [walkApply] Exiting eval tree: provider.null
+2020/07/15 11:34:59 [TRACE] vertex "provider.null": visit complete
+2020/07/15 11:34:59 [TRACE] dag/walk: visiting "null_resource.cluster (prepare state)"
+2020/07/15 11:34:59 [TRACE] vertex "null_resource.cluster (prepare state)": starting visit (*terraform.NodeApplyableResource)
+2020/07/15 11:34:59 [TRACE] vertex "null_resource.cluster (prepare state)": evaluating
+2020/07/15 11:34:59 [TRACE] [walkApply] Entering eval tree: null_resource.cluster (prepare state)
+2020/07/15 11:34:59 [TRACE] <root>: eval: *terraform.EvalWriteResourceState
+2020/07/15 11:34:59 [TRACE] [walkApply] Exiting eval tree: null_resource.cluster (prepare state)
+2020/07/15 11:34:59 [TRACE] vertex "null_resource.cluster (prepare state)": visit complete
+2020/07/15 11:34:59 [TRACE] dag/walk: visiting "provider.null (close)"
+2020/07/15 11:34:59 [TRACE] vertex "provider.null (close)": starting visit (*terraform.graphNodeCloseProvider)
+2020/07/15 11:34:59 [TRACE] vertex "provider.null (close)": evaluating
+2020/07/15 11:34:59 [TRACE] [walkApply] Entering eval tree: provider.null (close)
+2020/07/15 11:34:59 [TRACE] <root>: eval: *terraform.EvalCloseProvider
+2020/07/15 11:34:59 [TRACE] GRPCProvider: Close
+2020/07/15 11:34:59 [TRACE] dag/walk: visiting "meta.count-boundary (EachMode fixup)"
+2020/07/15 11:34:59 [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
+2020/07/15 11:34:59 [TRACE] vertex "meta.count-boundary (EachMode fixup)": evaluating
+2020/07/15 11:34:59 [TRACE] [walkApply] Entering eval tree: meta.count-boundary (EachMode fixup)
+2020/07/15 11:34:59 [TRACE] <root>: eval: *terraform.EvalCountFixZeroOneBoundaryGlobal
+2020/07/15 11:34:59 [TRACE] [walkApply] Exiting eval tree: meta.count-boundary (EachMode fixup)
+2020/07/15 11:34:59 [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
+2020/07/15 11:34:59 [TRACE] dag/walk: visiting "provisioner.local-exec (close)"
+2020/07/15 11:34:59 [TRACE] vertex "provisioner.local-exec (close)": starting visit (*terraform.graphNodeCloseProvisioner)
+2020/07/15 11:34:59 [TRACE] vertex "provisioner.local-exec (close)": evaluating
+2020/07/15 11:34:59 [TRACE] [walkApply] Entering eval tree: provisioner.local-exec (close)
+2020/07/15 11:34:59 [TRACE] <root>: eval: *terraform.EvalCloseProvisioner
+2020-07-15T11:34:59.219Z [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2020-07-15T11:34:59.220Z [DEBUG] plugin: plugin process exited: path=/usr/local/bin/terraform pid=10567
+2020-07-15T11:34:59.220Z [DEBUG] plugin: plugin exited
+2020/07/15 11:34:59 [TRACE] [walkApply] Exiting eval tree: provisioner.local-exec (close)
+2020/07/15 11:34:59 [TRACE] vertex "provisioner.local-exec (close)": visit complete
+2020-07-15T11:34:59.221Z [DEBUG] plugin: plugin process exited: path=/home/ubuntu/adobe/nullresource/.terraform/plugins/linux_amd64/terraform-provider-null_v2.1.2_x4 pid=10582
+2020-07-15T11:34:59.221Z [DEBUG] plugin: plugin exited
+2020/07/15 11:34:59 [TRACE] [walkApply] Exiting eval tree: provider.null (close)
+2020/07/15 11:34:59 [TRACE] vertex "provider.null (close)": visit complete
+2020/07/15 11:34:59 [TRACE] dag/walk: visiting "root"
+2020/07/15 11:34:59 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2020/07/15 11:34:59 [TRACE] vertex "root": visit complete
+2020/07/15 11:34:59 [TRACE] statemgr.Filesystem: creating backup snapshot at terraform.tfstate.backup
+2020/07/15 11:34:59 [TRACE] statemgr.Filesystem: state has changed since last snapshot, so incrementing serial to 2
+2020/07/15 11:34:59 [TRACE] statemgr.Filesystem: writing snapshot at terraform.tfstate
+2020/07/15 11:34:59 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2020/07/15 11:34:59 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
