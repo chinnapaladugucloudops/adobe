@@ -6,5 +6,5 @@ provider "aws" {
 resource "aws_instance" "example" {
   ami           = "ami-02d55cb47e83a99a0"
   instance_type = "t2.micro"
-  count = 2
+  count = 3
 }

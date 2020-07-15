@@ -422,3 +422,18 @@ if (1)
 else
  echo false
 ========
+$ terraform import <Resourcetype.resourcename.index> <resourceId>
+$ terraform import  aws_iam_user.example[3] adam
+==============
+provider "aws" {
+  region = "ap-south-1"
+}
+
+# Specify the EC2 details
+resource "aws_instance" "example" {
+  ami           = "ami-02d55cb47e83a99a0"
+  instance_type = "t2.micro"
+  count = 3
+}
+
+$ terraform import aws_instance.example[2] i-01b3c0d6ea4700a47
