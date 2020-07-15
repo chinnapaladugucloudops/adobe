@@ -409,3 +409,4 @@ resource "aws_iam_user" "example" {
   count = var.enable
 }
 
+$ terraform plan -var 'enable=0'
