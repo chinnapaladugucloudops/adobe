@@ -11,6 +11,6 @@ variable "enable" {
 #Create single user
 resource "aws_iam_user" "example" {
   name = "adam"
-  count = var.enable
+  count = var.enable ? 1 : 0
 }
 

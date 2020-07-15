@@ -410,3 +410,15 @@ resource "aws_iam_user" "example" {
 }
 
 $ terraform plan -var 'enable=0'
+====
+#Create single user
+resource "aws_iam_user" "example" {
+  count = var.enable ? 1 : 0
+  name = "adam"
+}
+
+if (1)
+ echo true
+else
+ echo false
+========
