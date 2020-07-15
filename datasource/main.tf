@@ -5,7 +5,7 @@ provider "aws" {
 data "aws_instances" "test" {
   filter {
     name = "instance.group-id"
-    values = ["sg-9e42dffc"]
+    values = ["sg-9e42dff"]
   }
   filter {
     name = "instance-type"
